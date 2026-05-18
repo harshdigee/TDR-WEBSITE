@@ -1,0 +1,1019 @@
+.banner
+    position: relative
+    .bg
+        line-height: 0
+        position: relative
+        img
+            width: 100%
+            display: block
+            @include respond-to(screen-520)
+                height: 290px
+                object-fit: cover
+        video
+            width: 100%
+            height: 100vh
+            object-fit: cover
+            @include respond-to(screen-520)
+                height: 290px
+        &.overlay_after
+            &::after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                height: 45%
+                background: linear-gradient(to top, #000, #000000d1, transparent)
+                opacity: .7
+                pointer-events: none
+                @include respond-to(screen-420)
+                    height: 50%
+        &.overlay_before
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                height: 20%
+                background: linear-gradient(to bottom, #000, #000000d1, transparent)
+                opacity: .4
+                pointer-events: none
+.home-banner
+    .bg
+        img
+            width: 100%
+            height: 100vh
+            object-fit: cover
+            @include respond-to(screen-520)
+                height: 290px
+
+    .banner-content
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 1
+        .container
+            max-width: 900px
+            height: 100%
+            display: flex
+            align-items: flex-end
+            .flex
+                flex: 1
+                align-items: flex-end
+                padding-bottom: 10%
+                @include respond-to(screen-991)
+                    padding-bottom: 30px
+                .col
+                    flex: 0 1 50%
+                    max-width: 50%
+                    width: 100%
+                    @include respond-to(screen-991)
+                        flex: 0 1 100%
+                        max-width: 100%
+                    &:last-child
+                        @include respond-to(screen-991)
+                            display: none
+            .content
+                text-align: center
+                h1
+                    font-size: 36px
+                    line-height: 36px
+                    color: $white
+                    max-width: 341px
+                    width: 100%
+                    @include respond-to(screen-991)
+                        margin: 0 auto
+                        text-align: center
+                    @include respond-to(screen-520)
+                        font-size: 25px
+                        line-height: 34px
+                        max-width: 100%
+                        margin-bottom: 20px
+                .smile_img
+                    position: relative
+                    text-align: right
+                    @include respond-to(screen-991)
+                        text-align: center
+                    img
+                        position: absolute
+                        right: 6px
+                        bottom: -18px
+                        @include respond-to(screen-991)
+                            width: 28%
+                            left: 0
+                            right: 0
+                            display: block
+                            margin: auto
+                        @include respond-to(screen-767)
+                            width: 40%
+
+                    .text
+                        font-size: 140px
+                        font-family: $Malina
+                        color: $white
+                        position: relative
+                        z-index: 1
+                        line-height: .35
+                        @include respond-to(screen-991)
+                            font-size: 55px
+                            line-height: 65px
+                        @include respond-to(screen-520)
+                            font-size: 48px
+                            line-height: 0.35
+
+
+.inner-banner
+    .banner-content
+        position: absolute
+        padding: 65px 0
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        @include respond-to(screen-991)
+            padding: 25px 0
+
+        .container
+            height: 100%
+            display: flex
+            flex-wrap: wrap
+            height: 100%
+        &.bottom
+            .container
+                align-items: flex-end
+        &.center
+            .container
+                justify-content: center
+                .content
+                    @include respond-to(screen-520)
+                        text-align: center
+        &.left
+            .container
+                justify-content: center
+        &.space-between
+            .container
+                justify-content: space-between
+        .content
+            text-align: center
+            h1
+                color: $white
+                font-size: 36px
+                @include respond-to(screen-520)
+                    font-size: 28px
+                    line-height: normal
+                @include respond-to(screen-365)
+                    font-size: 25px
+                    line-height: normal
+            p
+                color: $white
+                font-size: 18px
+                @include respond-to(screen-520)
+                    font-size: 16px
+.btn-appointment
+    padding-left: 65px
+    .btn
+        display: inline-block
+        padding: 9px 40px
+        border: 1px solid $white
+        border-radius: 35px
+        color: $white
+        background: transparent
+        transition: .5s ease
+        &:hover
+            background: $secondry
+            border-color: $secondry
+.RDental-Home-SecA
+    background: $white
+    padding: 10px 0
+    @include respond-to(screen-767)
+        padding: 15px 0 0
+    .container-fluid
+        padding: 0
+    .flex
+        .col
+            flex: 0 1 50%
+            max-width: 50%
+            width: 100%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+            &:last-child
+                padding-left: 10px
+                @include respond-to(screen-520)
+                    padding: 0
+    figure
+        display: block
+        position: relative
+        >img
+            width: 100%
+            display: block
+        .video_icon
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 52px
+            height: 52px
+            &::before
+                width: 52px
+                height: 52px
+            img
+                width: auto
+                display: block
+                
+    .bg
+        background: #f0f0f0 url('../images/home/icon1.png')
+        background-repeat: no-repeat
+        background-position: bottom right
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        @include respond-to(screen-1140)
+            padding: 0 15px
+        @include respond-to(screen-767)
+            padding: 25px 15px
+    .content
+        max-width: 536px
+        width: 100%
+        h2
+            font-weight: $FontN
+        .designation
+            font-weight: $FontB
+            color: $black
+            margin-bottom: 30px
+            @include respond-to(screen-991)
+                margin-bottom: 15px
+        p
+            margin-bottom: 15px
+            @include respond-to(screen-991)
+                display: -webkit-box
+                -webkit-line-clamp: 3
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-align: justify
+                text-overflow: ellipsis 
+        .link
+            margin-top: 55px
+            @include respond-to(screen-991)
+                margin-top: 15px
+        
+.RDental-Home-SecB        
+    padding: 45px 0
+    @include respond-to(screen-767)
+        padding: 35px 0 20px
+    .heading
+        margin-bottom: 30px
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            padding: 15px
+            @include respond-to(screen-991)
+                padding: 5px
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 5px 0
+    .link
+        margin-top: 20px
+    .item
+        display: block
+        position: relative
+        figure
+            line-height: 0
+            display: block
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                top: 0
+                background: linear-gradient(to top, $black, transparent)
+                @include respond-to(screen-420)
+                    top: 50%
+                    opacity: .6
+            img
+                display: block
+                width: 100%
+        .content
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            padding: 30px
+            overflow-y: scroll
+            @include respond-to(screen-992)
+                height: 240px
+            @include respond-to(screen-1140)
+                padding: 15px
+            @include respond-to(screen-991)
+                padding: 15px
+                height: auto
+            &::-webkit-scrollbar 
+                width: 0
+            &::-webkit-scrollbar-thumb
+                background-color: $white
+            h3
+                color: $white
+                margin-bottom: 10px
+                @include respond-to(screen-767)
+                    font-size: 16px
+                @include respond-to(screen-420)
+                    text-align: center
+            ul
+                @include respond-to(screen-991)
+                    display: none
+                li
+                    display: block
+                    a
+                        display: block
+                        color: $white
+                        padding: 0px 0
+                        padding-left: 15px
+                        position: relative
+                        transition: .5s ease
+                        @include respond-to(screen-1140)
+                            font-size: 13px
+                            line-height: 19px
+                        &:hover
+                            color: $secondry
+                        &:before
+                            content: ""
+                            position: absolute
+                            left: 0
+                            top: 8px
+                            width: 10px
+                            height: 10px
+                            background: url('../icons/next_Arr.png')
+                            background-repeat: no-repeat
+                            background-position: 0
+                            @include respond-to(screen-1140)
+                                top: 5px
+
+.RDental-Home-SecC
+    padding: 20px 0 10px
+    .container-fluid
+        padding: 0
+        @include respond-to(screen-991)
+            padding: 0 15px
+        .slideB
+            .item
+                a
+                    display: block
+                    position: relative
+                    .logo
+                        position: absolute
+                        top: 45px
+                        left: 45px
+                        @include respond-to(screen-1140)
+                            top: 15px
+                            left: 15px
+                    figure
+                        display: block
+                        &::after
+                            content: ""
+                            position: absolute
+                            bottom: 0
+                            left: 0
+                            right: 0
+                            height: 60%
+                            opacity: .7
+                            background: linear-gradient(to top, $black, transparent)
+                        img
+                            display: block
+                    .content
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        right: 0 
+                        padding: 60px 150px
+                        @include respond-to(screen-1140)
+                            padding: 25px 15px
+                            padding-left: 90px
+                        @include respond-to(screen-991)
+                            padding: 15px
+                            padding-right: 65px
+                        .video_icon
+                            position: absolute
+                            left: 50px
+                            top: 66px
+                            width: 54px
+                            height: 54px
+                            @include respond-to(screen-1140)
+                                left: 15px
+                                top: 45px
+                            @include respond-to(screen-991)
+                                width: 44px
+                                height: 44px
+                                right: 8px
+                                left: auto
+                                top: auto
+                                bottom: 25px
+                            &:before
+                                width: 54px
+                                height: 54px
+                                @include respond-to(screen-991)
+                                    width: 44px
+                                    height: 44px
+
+                            
+                            img
+                                width: auto
+                                display: block  
+                        h3,p
+                            color: $white
+                        p
+                            @include respond-to(screen-420)
+                                font-size: 14px
+                                line-height: 1.4
+                        h3
+                            font-size: 30px
+                            @include respond-to(screen-1140)
+                                font-size: 28px
+                            @include respond-to(screen-767)
+                                font-size: 20px
+                                margin-bottom: 8px
+                                
+                
+.RDental-Home-SecD
+    background: #f7f5f5
+    padding: 55px 0  70px   
+    @include respond-to(screen-767)
+        padding: 40px 0 
+    .heading
+        margin-bottom: 70px
+        @include respond-to(screen-767)
+            margin-bottom: 40px
+    .flex
+        .col3
+            flex: 0 1 30%
+            max-width: 30%
+            width: 100%
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0     
+                order: 2      
+        .col2
+            flex: 0 1 43%
+            max-width: 43%
+            width: 100% 
+            padding-right: 65px
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+                order: 0
+                margin-bottom: 30px
+        .col1
+            flex: 0 1 27%
+            max-width: 27%
+            width: 100% 
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0     
+                order: 1  
+    figure
+        display: block
+        img
+            @include respond-to(screen-767)
+                display: block
+                margin: 0 auto 
+    .aside_left
+        max-width: 235px
+        @include respond-to(screen-767)
+            max-width: 100%
+                        
+    .item
+        .list
+            position: relative
+            padding: 14px 0
+            padding-left: 70px
+            margin: 0 0 30px
+            @include respond-to(screen-767)
+                margin-bottom: 20px
+            &:first-child
+                margin-bottom: 19px
+                @include respond-to(screen-767)
+                    margin-bottom: 20px
+            .video_icon
+                position: absolute
+                left: 0px
+                top: 50%
+                width: 54px
+                height: 54px
+                transform: translateY(-50%)
+                border-color: $primary
+                &:before
+                    display: none
+                    width: 54px
+                    height: 54px
+                    background: $primary
+            p
+                color: $primary
+                line-height: 22px
+                text-transform: uppercase
+        .content
+            .btn-appointment 
+                @include respond-to(screen-767)
+                    display: block
+                .btn
+                    min-width: 188px
+                    text-align: center
+                    padding: 8px 33px
+    .btn-appointment 
+        padding-left: 0
+        margin-top: 30px
+        @include respond-to(screen-767)
+            display: none
+        .btn
+            border-color: $primary
+            color: $primary
+            padding: 8px 33px
+            &:hover
+                border-color: $secondry
+                color: $white
+
+.RDental-Home-SecE
+    padding: 45px 0
+    @include respond-to(screen-520)
+        padding-bottom: 0
+    .bg
+        background: #fafafa url('../images/home/img8.jpg')
+        background-repeat: no-repeat
+        background-position: bottom right
+        padding: 80px 0
+        @include respond-to(screen-991)
+            position: relative
+            background-position: -20% 0px
+        @include respond-to(screen-767)
+            padding-bottom: 30px
+        @include respond-to(screen-520)
+            background-position: right top
+            padding: 30px 0
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            opacity: .97
+            @include respond-to(screen-991)
+                background: linear-gradient(to right, #fff 40%, #fff 60%, transparent 100%)
+            @include respond-to(screen-767)
+                background: #ffffffed
+        
+    .container
+        @include respond-to(screen-991)
+            position: relative
+            z-index: 1
+    .heading
+        max-width: 790px
+        margin: 0 auto 55px
+        @include respond-to(screen-767)
+            margin-bottom: 35px
+        h2
+            margin-bottom: 15px
+    .flex
+        .col
+            flex: 0 1 50%
+            max-width: 50%
+            width: 100%
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+            &:last-child
+                @include respond-to(screen-767)
+                    display: none
+        .video_tag
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+    .video_icon
+        background: $white
+    .awards_text
+        max-width: 475px
+        .award
+            display: flex
+            margin-bottom: 50px
+            flex-wrap: wrap  
+            @include respond-to(screen-767)
+                margin-bottom: 25px
+            .img
+                padding: 0 5px
+                @include respond-to(screen-767)
+                    flex: 0 1 50%
+                    max-width: 50%
+                    width: 100%
+                    padding: 10px
+                img
+                    @include respond-to(screen-520)
+                        max-width: 140px
+                        width: 100%
+                        margin: 0 auto
+        p
+            color: #666
+            @include respond-to(screen-767)
+                text-align: center
+        .link
+            margin-top: 50px
+            @include respond-to(screen-767)
+                margin-top: 20px
+            @include respond-to(screen-420)
+                margin-top: 0
+                text-align: center
+            a
+                span
+                    padding-right: 78px
+    .DentalAcchivement
+        margin-top: 50px
+        @include respond-to(screen-767)
+            margin-top: 30px
+            margin-left: -15px
+            margin-right: -15px
+            background: $white
+            padding: 26px 15px
+        ul
+            display: flex
+            flex-wrap: wrap
+            li
+                flex: 0 1 33.33%
+                max-width: 33.33%
+                width: 100%
+                @include respond-to(screen-767)
+                    padding: 0 4px
+                @include respond-to(screen-520)
+                    flex: 0 1 100%
+                    max-width: 100%
+                    margin-bottom: 15px
+                &:nth-child(2)
+                    padding: 0 20px
+                    @include respond-to(screen-767)
+                        padding: 0
+                    
+        .count_ind
+            @include respond-to(screen-767)
+                text-align: center
+                text-align: center
+                background: $white
+                padding: 20px 0
+                border: 1px solid #d9d9d9
+                border-radius: 3px
+                height: 100%
+            .counter
+                font-size: 36px
+                line-height: 30px
+                color: $primary
+                @include respond-to(screen-767)
+                    font-size: 26px
+            p
+                line-height: 18px
+                color: $black
+                margin-top: 12px
+                @include respond-to(screen-767)
+                    color: #666
+                @include respond-to(screen-520)
+                    font-size: 18px
+                span
+                    display: block
+                    @include respond-to(screen-767)
+                        display: inline-block
+    &.RDental-About-SecE
+        .awards_text 
+            .award 
+                flex-wrap: wrap
+                .img
+                    padding: 30px 15px
+.RDental-Home-SecF
+    padding: 20px 0
+    .container-fluid
+        padding: 0
+        @include respond-to(screen-767)
+            padding: 0 15px
+
+    .heading
+        max-width: 535px
+        width: 100%
+        margin: 0 auto 50px
+        @include respond-to(screen-767)
+            margin-bottom: 30px
+        h2
+            margin-bottom: 15px
+        p
+            line-height: 18px
+    .Slide-AWinning
+        .owl-nav 
+            position: absolute
+            top: 50px
+            right: 30px
+            button
+                display: inline-block
+                width: 55px
+        .item
+            img
+                filter: grayscale(1)
+                transition: .5s ease
+            &:hover
+                img
+                    filter: grayscale(0)
+
+.RDental-Home-SecG
+    padding: 40px 0
+    @include respond-to(screen-767)
+        padding: 30px 0
+    .container
+        max-width: 1070px
+    .heading
+        max-width: 765px
+        width: 100%
+        margin: 0 auto 60px
+        @include respond-to(screen-767)
+            margin-bottom: 40px
+        h2
+            margin-bottom: 15px
+        p
+            line-height: 18px
+            max-width: 465px
+            display: inline-block
+    .link
+        margin-top: 55px
+        a
+            span
+                padding-right: 80px
+    .Slide-worldwide
+        padding: 0 50px
+        @include respond-to(screen-991)
+            padding: 0
+        .item
+            .flex
+                justify-content: center
+                .shade
+                    position: relative
+                    overflow: hidden
+                    border-radius: 10px
+                    &:after
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        right: 0
+                        top: 0
+                        opacity: .66
+                        background: linear-gradient(to top, $black, transparent)
+                .before
+                    padding: 0 5px
+                    @include respond-to(screen-991)
+                        flex: 0 1 50%
+                        max-width: 50%
+                .after
+                    padding: 0 5px
+                    @include respond-to(screen-991)
+                        flex: 0 1 50%
+                        max-width: 50%
+            .content
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding: 15px
+                text-align: center
+                z-index: 1
+                img.icon
+                    display: inline-block
+                    width: auto
+                p
+                    color: $white
+            
+.RDental-Home-SecH
+    padding: 40px 6px
+    @include respond-to(screen-767)
+        padding-bottom: 20px
+    .container-fluid
+        padding: 0
+    .heading
+        margin: 0 auto 60px
+        @include respond-to(screen-767)
+            margin-bottom: 40px
+        h2
+            @include respond-to(screen-767)
+                position: relative
+                padding-top: 50px
+            span
+                color: $black
+                padding-right: 20px
+                @include respond-to(screen-767)
+                    padding: 0
+            img
+                @include respond-to(screen-767)
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    display: block
+                    margin: 0 auto
+            span,img
+                display: inline-block
+                vertical-align: middle
+    .item
+        position: relative
+        height: 100%
+        overflow: hidden
+        border-radius: 8px
+        figure
+            height: 100%
+            position: relative
+            &:after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                top: 0
+                opacity: .66
+                background: linear-gradient(to top, $black, transparent)
+            &:before
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                top: 0
+                opacity: .66
+                background: linear-gradient(to bottom, #000, transparent)
+            img
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .test_type
+            color: $white
+            position: absolute
+            top: 20px
+            left: 20px
+            @include respond-to(screen-767)
+                top: 10px
+                left: 10px
+        .content
+            position: absolute
+            bottom: 0
+            padding: 40px 0
+            left: 100px
+            right: 0
+            max-width: 370px
+            @include respond-to(screen-1140)
+                left: 78px
+                padding: 15px 0
+            @include respond-to(screen-991)
+                max-width: 550px
+                left: 65px
+            @include respond-to(screen-767)
+                bottom: 15px
+                padding: 5px
+            @include respond-to(screen-520)
+                padding: 15px
+                right: 65px
+                left: 0
+                bottom: 0
+            .video_icon
+                width: 44px
+                height: 44px
+                position: absolute
+                left: -65px
+                top: 50%
+                transform: translateY(-50%)
+                @include respond-to(screen-991)
+                    left: -54px
+                @include respond-to(screen-767)
+                    width: 40px
+                    height: 40px
+                @include respond-to(screen-520)
+                    left: auto
+                    right: -50px
+                &:before
+                    width: 44px
+                    height: 44px
+                    @include respond-to(screen-767)
+                        width: 40px
+                        height: 40px
+                img
+                    width: auto
+                    display: block
+            .name
+                color: $white
+                font-size: 19px
+                @include respond-to(screen-767)
+                    font-size: 16px
+                @include respond-to(screen-520)
+                    font-size: 19px
+
+            .designation
+                font-size: 12px
+                color: $white
+                line-height: 18px
+                @include respond-to(screen-767)
+                    line-height: 15px
+                @include respond-to(screen-520)
+                    line-height: 18px
+        
+
+
+    .testi-grid
+        .grid
+            display: grid
+            grid-template-columns: 33.33% 33.33% 33.33%
+            grid-gap: 0px 
+            @include respond-to(screen-520)
+                display: block
+            .col
+                padding: 6px
+                &:first-child
+                    grid-row-start: 1
+                    grid-row-end: 2
+                &:nth-child(2)
+                    grid-row-start: 1
+                    grid-row-end: 3
+
+.RDental-Home-SecI
+    padding: 134px 0 0                
+    background: #f0f0f0 url('../images/home/bg1.jpg')
+    background-repeat: no-repeat
+    background-position: bottom left
+    background-size: cover
+    position: relative
+    @include respond-to(screen-767)
+        padding: 0
+        background: $white
+    &::after
+        content: ""
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        background: linear-gradient(to left, #f0f0f0,#f0f0f0, transparent)
+        width: 30%
+        pointer-events: none
+        @include respond-to(screen-767)
+            display: none
+    .Dental-Clinc
+        background: $white url('../images/home/icon2.png')
+        background-repeat: no-repeat
+        background-position: bottom right
+        padding: 53px
+        border-radius: 20px
+        max-width: 530px
+        width: 100%
+        margin-left: auto
+        margin-right: 0
+        position: relative
+        z-index: 1
+        transform: translateY(60px)
+        box-shadow: 0 0 8px 2px #0000001f
+        @include respond-to(screen-767)
+            max-width: 100%
+            padding: 25px 0px
+            transform: none
+            box-shadow: none
+        .content
+            h4
+                margin-bottom: 15px
+                color: $black
+            p
+                margin-bottom: 22px
+                @include respond-to(screen-520)
+                    text-align: justify
+.secoContent
+    padding: 0 0 65px 0  
+    @include respond-to(screen-767)    
+        padding-bottom: 0
+    .item
+        .content
+            h4
+                color: $black
+                margin: 35px 0 12px
+            p
+                color: $text  
+                @include respond-to(screen-520)
+                    text-align: justify   
+    &.sect_2
+        padding: 68px 0     
+        @include respond-to(screen-767)
+            padding-top: 0  
+            padding-bottom: 30px  
+
+.content
+    p
+        a
+            color: $primary
+            &:hover
+                text-decoration: underline

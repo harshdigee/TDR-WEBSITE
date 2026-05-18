@@ -1,0 +1,547 @@
+*,
+*:before,
+*:after
+    padding: 0
+    margin: 0
+    list-style: none
+    box-sizing: border-box
+
+body,html
+    font-family: $DM
+    font-size: 16px
+    line-height: 25px
+    color: $text
+    font-weight: $FontN
+    &::-webkit-scrollbar 
+        width: 3px
+        background: #000000d1
+    &::-webkit-scrollbar-track 
+        box-shadow: none
+    &::-webkit-scrollbar-thumb 
+        background-color: $primary
+        outline: 0
+a[href]
+    text-decoration: none
+
+img
+    max-width: 100%
+
+.container
+    max-width: 1170px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+.container-fluid
+    padding: 0 25px
+    display: block
+    margin: 0 auto
+    @include respond-to(screen-991)
+        padding: 0 15px
+.heading
+    h2
+        line-height: 40px
+        margin-bottom: 5px
+        color: $black
+        font-weight: $FontN
+        @include respond-to(screen-767)
+            line-height: 30px
+        @include respond-to(screen-520)
+            line-height: 27px
+        span
+            color: $secondry
+    &.primary
+        h2
+            color: $primary
+.btn_aply
+    a
+        display: inline-block
+        border: 1px solid $primary
+        padding: 4px 30px
+        border-radius: 35px
+        color: $primary
+        transition: .5s ease
+        @include respond-to(screen-991)
+            background: $primary
+            color: $white
+        &:hover
+            background: $primary
+            color: $white
+h1,h2,h3,h4,h5,h6
+    color: $black
+    line-height: normal
+    font-weight: $FontB
+h1
+    font-size: 50px
+    line-height: 55px
+    @include respond-to(screen-767)
+        font-size: 35px
+h2
+    font-size: 36px
+    @include respond-to(screen-767)
+        font-size: 30px
+    @include respond-to(screen-520)
+        font-size: 20px
+        
+h3
+    font-size: 27px
+    @include respond-to(screen-767)
+        font-size: 22px
+h4
+    font-size: 25px
+    @include respond-to(screen-767)
+        font-size: 20px
+h5
+    font-size: 20px
+    @include respond-to(screen-767)
+        font-size: 18px
+h6
+    font-size: 18px
+    @include respond-to(screen-767)
+        font-size: 16px
+input,select,textarea,button,input[type="button"],input[type="text"],input[type="email"],input[type="tel"],input[type="number"],input[type="date"],input[type="time"]
+    font-family: $DM
+    font-size: 16px
+    line-height: 22px
+    display: block
+    max-width: 675px
+    width: 100%
+    background: $white
+    border: 0
+    outline: none
+.flex
+    display: flex
+    flex-wrap: wrap
+.signature
+    font-family: $Malina    
+    font-size: 48px
+    line-height: normal
+    color: $black
+    font-weight: normal  
+    @include respond-to(screen-991)
+        font-size: 28px    
+.read_more
+    text-align: center
+    a
+        display: inline-block
+        span,img
+            display: inline-block
+            vertical-align: middle
+        span
+            padding-right: 10px 
+.link
+    a
+        display: inline-block
+        padding: 10px 8px
+        position: relative
+        border-radius: 0
+        overflow: hidden
+        color: #5e3263
+        transition: .5s ease
+        &::after
+            content: ""
+            position: absolute
+            bottom: 0
+            top: 0
+            left: 0
+            right: 0
+            clip-path: polygon(0 100%, 100% 100%, 100% 98%, 0% 98%)
+            background: $primary
+            transition: .5s ease
+        span,img
+            display: inline-block
+            vertical-align: middle
+            position: relative
+            z-index: 1
+        img
+            filter: initial
+        &:hover
+            padding: 10px 13px
+            border-radius: 2px
+            &::after
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+            span
+                color: $white
+            img
+                filter: grayscale(1) brightness(0) invert(1)
+        @include respond-to(screen-991)
+            padding: 10px 13px
+            border-radius: 2px
+            &::after
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+            span
+                color: $white
+            img
+                filter: grayscale(1) brightness(0) invert(1)
+        span
+            padding-right: 22px      
+.custom-scrol
+    &::-webkit-scrollbar 
+        width: 3px
+    &::-webkit-scrollbar-track 
+        box-shadow: none
+    &::-webkit-scrollbar-thumb 
+        background-color: $primary
+        outline: 0
+.model-open
+    cursor: pointer        
+.text-center
+    text-align: center        
+.nav-center 
+    .owl-nav 
+        button
+            width: 49px
+            height: 49px
+            position: absolute
+            top: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            transform: translateY(-50%)
+            &.owl-prev  
+                left: 0 
+            &.owl-next
+                right: 0
+
+div#back-to-top
+    position: fixed
+    left: auto
+    right: -100px
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 55px
+    z-index: 1
+    bottom: 60px
+    background: $primary
+    padding: 10px
+    cursor: pointer
+    transition: 700ms ease
+    @include respond-to(screen-675)
+        width: 45px
+        height: 45px
+        bottom: 50px
+    &.show
+        right: 10px
+        &~.right_side_act_bt
+            right: 10px
+    svg
+        color: #fff
+        max-width: 18px
+// Social links
+.social-links
+    ul
+        li
+            display: inline-block
+            vertical-align: middle
+            a
+                display: block
+                width: 30px
+                line-height: 0
+                text-align: center
+                margin: 0 
+                svg
+                    width: 18px
+                    height: 18px
+                    display: inline-block
+                    path
+                        fill: #fff
+                        transition: 600ms ease
+                &:hover
+                    svg
+                        path
+                            fill: $primary
+.hide-mobile  
+    @include respond-to(screen-991)
+        display: none !important                          
+.hide-desktop 
+    @include respond-to(screen-992)
+        display: none !important                          
+// Form
+.form
+    .form-group
+        position: relative
+        margin-bottom: 20px
+        .form-control
+            max-width: 767px
+            width: 100%
+            height: 45px
+            font-family: $DM
+            font-size: 16px
+            border: 0
+            top: 16px
+            color: $black
+            padding-top: 15px
+            background: transparent
+            border-bottom: 1px solid #dbdbdb
+            transition: 700ms ease
+            -webkit-appearance: none
+            -moz-appearance: none
+            text-indent: 1px
+            text-overflow: ''
+            &:-internal-autofill-selected
+                -webkit-box-shadow: 0 0 0 1000px $white inset
+            option
+                color: $black
+            &:focus
+                outline: none
+                border-color: $black
+                &~label
+                    top: -6px
+                    font-size: 14px
+        &.valid
+            label
+                top: -6px
+                font-size: 14px
+        .icondoro
+            position: absolute
+            right: 10px
+            line-height: 0
+            top: 15px
+        textarea.form-control
+            height: 85px
+            max-width: 100%
+            padding-top: 15px
+            resize: none
+        label
+            position: absolute
+            left: 0
+            right: 0
+            pointer-events: none
+            line-height: normal
+            transition: 600ms ease
+            display: block
+            color: $white
+            top: 10px
+            padding: 0 0 13px
+.ui-datepicker
+    .ui-widget-header 
+        background: $primary
+        border-color: $primary
+    .ui-datepicker-title
+        color: $white
+        font-family: $DM
+.ui-datepicker-calendar
+    .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+        border: 1px solid $primary !important
+        background: $primary !important
+        color: #ffffff !important
+        text-align: center !important
+    .ui-state-active, .ui-widget-content .ui-state-active
+        border: 1px solid $primary !important
+        background: $primary !important
+        color: #ffffff !important
+        text-align: center !important
+    * 
+        font-family: $DM
+        text-align: center !important
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next
+    background: $primary !important
+    border: 0 !important
+    top: 2px !important
+    cursor: pointer
+.ui-datepicker .ui-datepicker-prev
+    left: 1px !important
+.ui-datepicker .ui-datepicker-next
+    right: 1px !important
+.ui-datepicker .ui-datepicker-prev span
+    background: url('../icons/prev.png')
+    background-repeat: no-repeat
+.ui-datepicker .ui-datepicker-next span
+    background: url('../icons/next.png')
+    background-repeat: no-repeat
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year
+    width: 45%
+    background: #000
+    border: 0
+    color: #fff
+    text-align: center
+span.ui-datepicker-year,span.ui-datepicker-month
+    font-family: $DM
+    font-weight: normal
+.ui-datepicker .ui-datepicker-title select 
+    font-family: $DM
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span
+    filter: invert(1)
+.ui-datepicker .ui-datepicker-title select
+    font-size: 1em
+    margin: 1px 0
+    background: $primary
+    &:focus
+        outline: 0
+    option
+        &:hover
+            background: $primary
+.model
+    .close
+        width: 35px
+        height: 35px
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        right: 15px
+        top: 10px
+        border-radius: 50px
+        background: transparent
+        cursor: pointer
+        transition: .5s ease
+        img
+            width: 12px
+        &:hover
+            background: #f1f1f1
+.overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: $black
+    opacity: .4
+    pointer-events: none
+    transition: .3s sease
+.is-open
+    .overlay
+        pointer-events: all
+
+        
+
++keyframes(bganimat)
+    0%
+        background-position: 0
+    100%
+        background-position: 20px 10px     
+
++keyframes(try)
+    0%
+        transform: translateY(100px)
+    100%
+        transform: translateY(0px)        
++keyframes(blink)
+    0%
+        color: #d08897
+    100%
+        color: $white
+.img_hover
+    overflow: hidden
+    img
+        transform: scale(1)
+        transition: 1s ease
+    &:hover
+        img
+            transform: scale(1.1)
+// Video icon
+// Video icon
+.video_icon
+    width: 68px
+    height: 68px
+    border: 1px solid $white
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 100px
+    cursor: pointer
+    @include respond-to(screen-767)
+        width: 47px
+        height: 47px
+    &:before
+        width: 60px
+        height: 60px
+        top: 50%
+        right: 0
+        bottom: 0
+        left: 50%
+        position: absolute
+        content: ""
+        transform: translateX(-50%) translateY(-50%)
+        background: #ffffff
+        border-radius: 50%
+        display: block
+        animation: pulse-border 1500ms ease-out infinite
+        @include respond-to(screen-767)
+            width: 47px
+            height: 47px
+    img
+        width: auto
+        position: relative
+
+    
++keyframes(pulse-border) 
+    0%
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+        opacity: 0.5
+    100%
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
+        opacity: 0
+.Model_Video
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 3
+    background: $black
+    transform: translateY(100%)
+    transition: .5s ease
+    &.is-open
+        transform: translateY(0%)
+    
+    .modelBody
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        iframe
+            width: 90%
+            height: 85%
+            border: 0
+            @include respond-to(screen-767)
+                width: 100%
+                height: 200px
+                border: 0
+                object-fit: cover
+.close_model
+    position: absolute
+    right: 15px
+    top: 15px
+    cursor: pointer
+    width: 30px
+    height: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 35px
+    img
+        width: 14px
+
+.mob_strip
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    background: $black
+    z-index: 2
+    display: none
+    @include respond-to(screen-767)
+        display: block
+    ul
+        display: flex
+        li
+            flex:  0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            font-size: 13px
+            &:nth-child(2)
+                border-left: 1px solid #ebebeb57
+                border-right: 1px solid #ebebeb57
+            &:nth-child(3)
+                border-right: 1px solid #ebebeb57
+            a
+                color: $white
+                display: block
+                text-align: center
+                padding: 7px 0        

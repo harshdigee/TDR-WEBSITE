@@ -1,0 +1,269 @@
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 3
+    padding: 10px 0
+    transition: .5s ease
+    &:before
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        height: 0
+        background: $black
+        opacity: .8
+        transition: .5s ease
+    .container-fluid
+        max-width: 1280px
+        width: 100%
+        padding: 0 15px
+
+    .header-wrapper
+        display: block
+        position: relative
+    &.header-fixed
+        padding: 8px 0
+        &:before
+            height: 100%
+        .custom-logo
+            line-height: 0
+            display: block
+            a
+                img
+                    max-width: 134px
+                    @include respond-to(screen-767)
+                        max-width: 100%
+                    
+        .header-navigation
+            .top-navigation
+                margin-bottom: 8px
+                @include respond-to(screen-1230)
+                    margin-bottom: 0
+
+    .flex
+        align-items: center
+    .header-logo
+        flex: 0 1 145px
+        max-width: 145px
+        width: 100%
+        @include respond-to(screen-767)
+            flex: 0 1 90px
+            max-width: 90px
+    .header-navigation
+        flex: 1
+        .top-navigation
+            margin-bottom: 15px
+            transition: .5s ease
+            @include respond-to(screen-1230)
+                margin-bottom: 0
+            .nav
+                ul
+                    li
+                        &:not(:last-child)
+                            @include respond-to(screen-767)
+                                display: none
+
+                        a
+                            font-size: 14px
+                        
+                        .UrdrMnvr
+                            padding: 0px 0px
+                            position: relative 
+                            .Usrmnvrtuv
+                                padding: 0px 0px 
+                                @include respond-to(screen-767)
+                                    padding: 5px 0px 
+                            .UsrmnVl 
+                                color: #fff  
+                                display: inline-block
+                                padding-left: 15px 
+                                position: relative 
+                                padding-right: 15px  
+                                font-family: "DM Sans", sans-serif
+                                font-size: 16px
+                                @include respond-to(screen-767)
+                                    font-size: 13px 
+                                    padding-right: 0px 
+                                    padding-left: 25px
+                                img 
+                                    position: absolute 
+                                    left: 0px 
+                                    top: 3px
+                                    @include respond-to(screen-767)
+                                        left: 5px 
+                                        top: 3px 
+                                        width: 13px  
+
+                                .Rwnmvr
+                                    border: solid #fff
+                                    border-width: 0 1px 1px 0
+                                    display: inline-block
+                                    padding: 0px
+                                    width: 10px
+                                    position: absolute
+                                    height: 10px
+                                    transform: rotate(45deg)
+                                    right: 0 
+                                    top: 7px  
+                                    @include respond-to(screen-767)
+                                        top: 6px 
+                                        right: -16px 
+                                        width: 6px
+                                        height: 6px   
+                            .DrpDwnSwnvr
+                                display: none
+                                position: absolute
+                                left: 0
+                                right: 0
+                                background: #fff
+                                padding: 10px
+                                border-radius: 3px
+                                top: 40px
+                                margin: 0px 0px 
+                                box-shadow: 1px 1px 7px rgba(112, 112, 112, 0.62) 
+                                @include respond-to(screen-767)
+                                    top: 45px 
+                                    margin: 0px 0px 
+                                    padding: 8px 
+                                li 
+                                    padding: 2px 0px 
+                                    @include respond-to(screen-767)
+                                        padding: 2px 0px 
+                                    a 
+                                        font-size: 14px 
+                                        color: #000
+                                &:before 
+                                    width: 0
+                                    height: 0
+                                    top: -5px
+                                    right: auto
+                                    bottom: auto
+                                    left: auto
+                                    right: 43px
+                                    position: absolute
+                                    content: ""
+                                    border-left: 10px solid transparent
+                                    border-right: 10px solid transparent
+                                    border-bottom: 10px solid #fff
+                                    -webkit-transform: translate(-50%, -50%)
+                                    transform: translate(-50%, -50%) 
+                                    @include respond-to(screen-767)
+                                        border-left: 5px solid transparent
+                                        border-right: 5px solid transparent
+                                        border-bottom: 5px solid #fff
+                                        top: -2px
+                                        right: 8px 
+
+
+
+
+
+        .bottom-navigation
+            @include respond-to(screen-991)
+                display: none
+            .nav
+                ul
+                    li
+                        &:last-child
+                            a
+                                padding-right: 0
+                        a
+                            font-size: 16px
+                            @include respond-to(screen-1230)
+                                font-size: 14px
+                        &:nth-last-child(1),&:nth-last-child(2)
+                            @include respond-to(screen-1140)
+                                display: none
+        .nav
+            text-align: right
+            ul
+                text-align: left
+                display: inline-block
+                vertical-align: middle
+                li
+                    display: inline-block
+                    a
+                        color: $white
+                        padding: 0 7px
+                        transition: .5s ease
+                        @include respond-to(screen-1230)
+                            padding: 0 7px
+                        @include respond-to(screen-991)
+                            padding: 0 4px
+                        img,span
+                            display: inline-block
+                            vertical-align: middle
+                        img
+                            margin-right: 10px
+                        &:hover
+                            color: $secondry
+                    
+                        
+                        
+
+// custom Logo
+.custom-logo
+    a
+        display: inline-block
+        img
+            display: block
+            max-width: 100%
+            transition: .5s ease
+.menu-trigger 
+    display: inline-block
+    vertical-align: middle
+    width: 46px
+    height: 26px
+    margin-left: 10px
+    cursor: pointer
+    span
+        display: block
+        width: 100%
+        height: 1px
+        background: $white
+        vertical-align: middle
+        margin-top: 12px
+        position: relative
+        &::before,&::after
+            content: ""
+            position: absolute
+            width: 100%
+            height: 1px
+            background: $white
+            left: 0
+            right: 0
+        &::before
+            top: -6px
+        &::after
+            bottom: -6px
+.top-navigation 
+    a.model-open
+        @include respond-to(screen-675)
+            animation: blink 2s ease infinite
+
+.Inmnvr
+    display: inline-block 
+    padding-right: 2px 
+    @include respond-to(screen-767) 
+       display: none 
+
+@-webkit-keyframes NAME-YOUR-ANIMATION1 
+    0%,
+    49% 
+        color: #da9ea8 
+    
+    100%,
+    50% 
+        color: #fff
+    
+
+
+.blink_inq1 
+  
+    -webkit-animation: NAME-YOUR-ANIMATION1 1s infinite
+    -moz-animation: NAME-YOUR-ANIMATION1 1s infinite
+    -o-animation: NAME-YOUR-ANIMATION1 1s infinite
+    animation: NAME-YOUR-ANIMATION1 1s infinite 

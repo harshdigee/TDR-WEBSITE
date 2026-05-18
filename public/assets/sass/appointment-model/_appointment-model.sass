@@ -1,0 +1,126 @@
+.DREnquryModelPop
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    transform: translateX(100%)
+    z-index: 4
+    transition: .5s ease
+    &.is-open
+        transform: translateX(0%)
+        .overlay
+            opacity: .3
+    .mdel_wrapp
+        height: 100%
+    .ModelPop
+        max-width: 450px
+        width: 100%
+        background-color: $white
+        background-image: url('../images/icon_leaf.png')
+        background-repeat: no-repeat
+        background-position: bottom right
+        padding: 25px
+        padding-bottom: 20px
+        margin-left: auto
+        margin-right: 0
+        height: 100%
+        position: relative
+        @include respond-to(screen-767)
+            padding: 25px 0 
+        .content
+            text-align: center
+            width: 100%
+            margin-bottom: 35px
+            @include respond-to(screen-675)
+                margin-bottom: 15px
+            h2
+                color: $black
+                font-size: 34px
+                margin-bottom: 11px
+                @include respond-to(screen-767)
+                    font-size: 28px
+                    margin-bottom: 5px
+                span
+                    color: $primary
+            p
+                color: $text
+                line-height: 23px
+                @include respond-to(screen-675)
+                    line-height: 18px
+                    font-size: 13px
+        .form
+            .flex
+                flex-wrap: wrap
+                @include respond-to(screen-520)
+                    flex-direction: column
+                .col
+                    flex: 0 0 100%
+                    width: 100%
+                    padding: 0 15px
+                    @include respond-to(screen-675)
+                        padding: 0
+                    @include respond-to(screen-520)
+                        flex: 0 0 100%
+                        width: 100%
+                    &:nth-child(5),&:last-child
+                        flex: 0 0 100%
+                        width: 100%
+            .form-group
+                position: relative
+                @include respond-to(screen-767)
+                    margin-bottom: 7px
+                img.arrow 
+                    position: absolute
+                    bottom: 15px
+                    right: 2px
+                    pointer-events: none
+                .form-control
+                    color: $black
+                    padding: 0
+                    border-color: $text
+                label
+                    color: $black
+                textarea.form-control
+                    padding-top: 15px
+
+                a.btn-button
+                    align-items: center
+                    color: $white
+                    padding: 6px 20px
+                    font-size: 18px
+                    width: 155px
+                    margin: 0 auto
+                    display: block
+                    border: 1px solid $primary
+                    text-align: center
+                    border-radius: 45px
+                    background: $primary
+                    margin-top: 20px
+                    transition: .5s ease
+                    &:hover
+                        background: $secondry
+                        color: $white
+                        border-color: $secondry
+                    img
+                        position: relative
+                        z-index: 1
+                        margin-left: 10px
+                textarea.form-control
+                    @include respond-to(screen-675)
+                        height: 120px
+                    
+    .close 
+        position: absolute
+        width: 25px
+        height: 25px
+        left: auto
+        right: 10px
+        top: 10px
+        cursor: pointer
+        z-index: 1
+        &:hover
+            background: transparent
+        img
+            width: 15px
+            

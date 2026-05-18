@@ -1,0 +1,547 @@
+
+### InvisilignlandingPage/InvisilignAligers.js
+
+### InvisilignlandingPage/InvisilignBanner.js
+- {data.heading}
+
+### InvisilignlandingPage/InvisilignDetail.js
+- Why should you go for clear aligners?
+
+### InvisilignlandingPage/InvisilignFeatures.js
+- {option.title}
+
+### InvisilignlandingPage/InvisilignForm.js
+
+### InvisilignlandingPage/InvisilignServices.js
+- {data.heading}
+
+### InvisilignlandingPage/InvisilignSmile.js
+- {data.heading}
+
+### InvisilignlandingPage/InvisilignStories.js
+- {data.heading}
+
+### InvisilignlandingPage/InvisilignTabber.js
+- {data.heading}
+
+### InvisilignlandingPage/InvisilionChoose.js
+- Why choose The Dental Roots
+
+### InvisilignlandingPage/InvisionFaq.js
+- {data.heading}
+
+### InvisilignlandingPage/InvisionLogos.js
+- Smiles Designed by Industry Leaders
+
+### about/AboutBanner.js
+- Excellence in dentistry
+
+### about/AboutBio.js
+- Dr. Dheeraj Setia
+
+### about/AboutBusinessAward.js
+- International Business Award 2018
+
+### about/AboutDental.js
+- About The Dental Roots
+
+### about/AboutTeam.js
+- The Dental Roots team
+
+### blog/BlogBanner.js
+- Our Blogs
+
+### blogDetail/BlogDetailBanner.js
+- {data.title}
+
+### blogDetail/RelatedBlogs.js
+- Related Blogs
+
+### career/CareerBanner.js
+- Careers
+
+### career/CareerJoining.js
+- Interested in joining us?
+
+### career/CareerOpenings.js
+- Current openings
+
+### career/CareerWork.js
+- Why work with us ?
+
+### contact/ContactBanner.js
+- Contact The Dental Roots
+
+### contact/ContactForm.js
+- Contact us
+
+### dentalTourism/DenTourDelhi.js
+- Highlights Of Getting Dental Treatment In Delhi NCR
+- Transport
+- Hotels
+- Well-practised doctors
+- Food
+- Affordable
+
+### dentalTourism/DenTourFly.js
+- Here is a list of some of the advantages of flying out to India for your dental treatment.
+
+### dentalTourism/DenTourForm.js
+- Accessibility to Best Dental Clinic In India
+- Comfort With Different Dental Chains In India
+- Travel Support for Dental Hospitals In India
+- Cost & Quality with Best Dentist In India
+
+### dentalTourism/DenTourInternational.js
+- International Patients
+
+### dentalTourism/DentTourTravel.js
+- Why travel to india for dental treatment?
+
+### dentalTourism/DentTourVisa.js
+- Getting a medical visa for travel to India for dental treatment
+- E-Visa Request Process:
+- About The Different Categories Of Visa When Visiting India
+
+### dentalTourism/DentalTourismBanner.js
+- We treat over 2500+ patients from around the globe every year
+
+### dentalTourismNew/DTBanner.js
+
+### dentalTourismNew/DTDentures.js
+- {data.heading}
+
+### dentalTourismNew/DTForm.js
+
+### dentalTourismNew/DTStories.js
+- {data.heading}
+
+### dentalTourismNew/DTTabber.js
+- {data.heading}
+
+### dentalTourismNew/DTTimmeline.js
+- The Dental Implant Treatment Process
+
+### dentalTourismNew/DTTreatment.js
+- {data.heading}
+
+### dentalTourismNew/DTWhyChoose.js
+- {data.heading}
+
+### errorPage/ErrorPage.js
+- Opps!
+- Something Went Wrong!
+
+### faqs/FaqBanner.js
+- Frequently asked questions
+
+### gallery/GalleryBanner.js
+- The Dental Roots Gallery
+
+### home/HomeAwardWinning.js
+- Award winning dental Clinic in India
+
+### home/HomeCelebrity.js
+- Invisalign treatment
+- Aligner Solutions for Dentists
+
+### home/HomeExc.js
+- Excellence in dentistry
+- Cosmetic Dentistry
+- Surgical Dentistry &amp; Implants
+- Routine &amp; Preventive Dentistry
+
+### home/HomeSmile.js
+- Where Art Meets Precision in Every Smile
+
+### home-old/HomeAwardWinning.js
+- Award winning dental Clinic in India
+
+### home-old/HomeBanner.js
+- Perfecting harmony  and confidence in   every radiant
+
+### home-old/HomeBio.js
+- Dr. Dheeraj Setia
+
+### home-old/HomeCounter.js
+- Our Impact In Numbers
+- +
+- M+
+- K+
+- %
+
+### home-old/HomeDentalClinic.js
+- Best Dental Clinic in Gurgaon - Golf Course Road & Sushant Lok
+- Best Dental Clinic in India
+- Best Dental Clinic In South Delhi
+
+### home-old/HomeDentalHomeSec.js
+- Invisalign treatment
+- Aligner Solutions for Dentists
+
+### home-old/HomeDentalImplant.js
+- Dental Implant
+
+### home-old/HomeExcellence.js
+- Excellence in dentistry
+- General Dentistry
+- Surgical  Dentistry & Implants
+- Routine & Preventive Dentistry
+
+### home-old/HomeMillionSmiles.js
+- Where Art Meets Precision in Every Smile
+
+### home-old/HomeOurAward.js
+- Our award-winning dental team
+
+### home-old/HomeRealPeople.js
+- Real people, Real smiles
+
+### internationPatientFinal/IPFBanner.js
+- Get Treated at the Best Dental Clinic in India
+
+### internationPatientFinal/IPFContent.js
+- Global Patients, Local Trust: 22+ Years of  Premium Dental Care That Makes Sense
+
+### internationPatientFinal/IPFEngineering.js
+- Engineering Smiles, Restoring Confidence
+
+### internationPatientFinal/IPFMap.js
+- Spreading Smiles Across the Globe
+
+### internationPatientFinal/IPFTreatment.js
+- Your Treatment Journey at the Dental Roots
+
+### internationalPatients/InternationalCustomerTeam.js
+- Dedicated Team of International Customer Care
+
+### internationalPatientsNew/IPBanner.js
+- Top-Quality Dentistry, Tailored for International  Patients
+- Top-Quality Dentistry, Tailored for International  Patients
+
+### internationalPatientsNew/IPContent.js
+- 22+ Years of Unmatched And Affordable Dental Experience is Just A Flight Away
+
+### internationalPatientsNew/IPMap.js
+- Spreading Smiles Across the Globe
+
+### internationalPatientsNew/IPTabber.js
+- Why Dental Roots is Already a Choice in India for Global Patience
+
+### internationalPatientsNew/IPTimeline.js
+- Your Treatment Journey at the Dental Roots
+
+### privacyPolicy/PrivacyBanner.js
+- Privacy Policy
+
+### privacyPolicy/PrivacyDetails.js
+- Privacy Policy
+- Treatment
+- Payment
+- Health Care Operations
+- Individual Rights
+
+### regularDentalCheckups/RegularDentalBanner.js
+- {heading}
+
+### regularDentalCheckups/RegularDentalContent.js
+- Regular Dental Checkups
+
+### serviceDetail/braces/BracesBefore.js
+- What Should One Know Before Getting Braces?
+- Choosing the Right Orthodontic Clinic in India
+- Conclusion
+
+### serviceDetail/braces/BracesContent.js
+- The Ultimate Guide to Dental Braces Treatment and Cost
+- Types of Dental Braces in India
+- Traditional Metal Braces
+- Ceramic Braces
+- Lingual Braces
+- Invisalign
+- Best Orthodontic Treatment in Delhi & Gurgaon!
+- The Cost of Dental Braces in India
+- Which Orthodontic Treatment is Right for You?
+- Metal Braces
+- Ceramic Braces
+- Invisible Braces
+- Lingual Braces
+- Benefits of Getting Dental Braces in India
+- Enhanced Confidence
+- Improved Oral Health
+- Functional Improvements
+- Long-Term Investment
+
+### serviceDetail/braces/BracesRoot.js
+- {title}
+
+### serviceDetail/dentalBridges/DentalBridgesCare.js
+- How Do You Care for a Dental Bridge?
+- Do
+- Do Not
+- Only the Best for Your Smile
+
+### serviceDetail/dentalBridges/DentalBridgesContent.js
+- How Does a Dental Bridge Work?
+- Why Choose a Dental Bridge?
+- When is a Bridge Required?
+
+### serviceDetail/dentalBridges/DentalRoots.js
+- {title}
+
+### serviceDetail/dentalImplantsInGurgaon/DentalImplantsContent.js
+- Your Smile Deserves the Very Best
+- We Deliver the Highest Quality Luxury Dental Care
+- What are Dental Implants?
+- Why Choose Dental Implants at Our Clinic?
+- What is the Dental Implant Placement Process?
+- The longer healing process helps ensure implants are fully secured in bone.
+- Single-day Dental Implants:
+- Types of Dental Implants:
+- Single Tooth Implant
+- All-on-4
+- All-on-6/8
+
+### serviceDetail/dentalImplantsInGurgaon/DentalImplantsLaserRoot.js
+- {title}
+
+### serviceDetail/dentalImplantsInGurgaon/DentalImplantsSafeCare.js
+- High-tech &amp; Safe Care at The Dental Roots
+- Dental Implant Costs
+
+### serviceDetail/dentures/DentureMythsVersus.js
+- Denture Myths versus Reality
+
+### serviceDetail/dentures/DenturesContent.js
+- Custom-made Dentures @ The Dental Roots
+- Types of Dentures
+- Full Dentures
+- Partial Dentures
+- Implant-supported Dentures
+- Best rated dentures
+
+### serviceDetail/dentures/DenturesRoot.js
+- {title}
+
+### serviceDetail/invisalignTreatment/InvisalignTreatmentContent.js
+- Premium Platinum Holder at The Dental Roots
+- The benefits of Invisalign
+- Invisible
+- Easier to Care for than Braces
+- Fewer Food Restrictions
+- Less Painful
+- Freedom to Play Sports
+- Ease of Playing a Musical Instrument
+- Improved Self Esteem
+- How Aligners Helps?
+- Overbite
+- Underbite
+- Crossbite
+- Comprehensive brace options
+
+### serviceDetail/invisalignTreatment/InvisalignTreatmentRoots.js
+- {title}
+
+### serviceDetail/invisalignTreatment/InvisalignTreatmentTeen.js
+- Invisalign teen®
+
+### serviceDetail/kidsDentistry/KidDentistryRestorative.js
+- Our Restorative Care
+
+### serviceDetail/kidsDentistry/KidRoot.js
+- {title}
+
+### serviceDetail/kidsDentistry/KidsDentistryContent.js
+- Why do your Kids need a Paediatric Dentist?
+- Our Preventive Care:
+- Our Diagnostic Care:
+
+### serviceDetail/laserDentistry/LaserDentistryContent.js
+- How can Lasers be used in Dental Treatments?
+
+### serviceDetail/laserDentistry/LaserDentistryProcedures.js
+- How Effective is Laser Dentistry Compared to other Dental Procedures?
+
+### serviceDetail/laserDentistry/LaserDentistryRoot.js
+- {title}
+
+### serviceDetail/painlessExtractionsToot/PETRemovalContent.js
+- A Tooth Extraction can Maintain Oral Health
+- Tooth Extraction is Never Our First Choice:
+- What is Tooth Extraction Socket Preservation?
+- Advantages of Tooth Extraction Socket Preservation
+
+### serviceDetail/painlessExtractionsToot/PETRemovalRecovery.js
+- Recovery Times for Tooth Extraction
+- Elevate Your Oral Health with The Dental Roots
+
+### serviceDetail/painlessExtractionsToot/PETRemovalRoots.js
+- {title}
+
+### serviceDetail/painlessRootCanalTreatment/EndodonticsTeam.js
+- Endodontics team
+- Save your Teeth, Take Back your Life
+
+### serviceDetail/painlessRootCanalTreatment/LaserRoot.js
+- {title}
+
+### serviceDetail/painlessRootCanalTreatment/MoreServices.js
+- More Services
+
+### serviceDetail/painlessRootCanalTreatment/PainlessRoots.js
+- {title}
+
+### serviceDetail/painlessRootCanalTreatment/QuestionFaqs.js
+- Questions To Ask Your Doctor
+
+### serviceDetail/painlessRootCanalTreatment/ServiceDetailBanner.js
+- {bannerData.title}
+
+### serviceDetail/painlessRootCanalTreatment/ServiceDetailContent.js
+- Save your Tooth from Decay!
+- What will Happen During the RCT Dental Procedure?
+- Single Visit RCT
+
+### serviceDetail/painlessRootCanalTreatment/ServiceDetailForm.js
+- Book Your Appointment
+
+### serviceDetail/painlessWisdomToothExtraction/PWTEContent.js
+- What is Wisdom Tooth Removal?
+- Wisdom Teeth Treatment in Gurgaon and South Delhi
+- What Causes an Impacted Wisdom Tooth?
+- What are the Symptoms?
+
+### serviceDetail/painlessWisdomToothExtraction/PWTEExtraction.js
+- Recovering from Wisdom Tooth Extraction
+
+### serviceDetail/painlessWisdomToothExtraction/PWTERoot.js
+- {title}
+
+### serviceDetail/porcelainCrowns/DentalCrownHappens.js
+- What happens when you get a Dental Crown?
+- How should I care for and maintain my Porcelain Crowns?
+
+### serviceDetail/porcelainCrowns/PorcelainCrownsContent.js
+- What is a Dental Crown? Do I need one?
+- There are a few reasons why you might need a Dental Crown.
+- Who is an ideal candidate for Porcelain Crowns?
+- Benefits of Dental Crowns:
+- What type of Dental Crown should I Choose?
+- Only the Best for your Smile
+
+### serviceDetail/porcelainCrowns/PorcelainCrownsRoots.js
+- {title}
+
+### serviceDetail/smilemMakeovers/SmileMakeoversContent.js
+- What is a Smile Makeover?
+- How a Smile Makeover Treatment Improves Dental Health
+- Find out if a Smile Makeover is right for you
+- How do we Design your Smile?
+- Can I eat and drink right away after a Complete Smile Makeover?
+- What are the Benefits of getting a Smile Makeover?
+- Are the Procedures Painful?
+- Can I get a Smile Makeover during my Teenage Years?
+- How long will it take to Complete my Smile Makeover?
+
+### serviceDetail/smilemMakeovers/SmileMakeoversPatient.js
+- What's your Ultimate Goal for Every Couture Smile Patient?
+
+### serviceDetail/smilemMakeovers/SmileMakeoversRoot.js
+- {title}
+
+### serviceDetail/teethWhitening/TeethWhiteningContent.js
+- Zoom! Laser Teeth Whitening
+
+### serviceDetail/teethWhitening/TeethWhiteningRoot.js
+- {title}
+
+### serviceDetail/teethWhitening/TeethWhiteningTreatment.js
+- Why Recommend us for Teeth Whitening Treatment?
+
+### serviceDetail/toothColouredRestoration/TCRBiometric.js
+- Biomimetic Dentistry: Mimicking Nature
+- Some of the Most Basic Elements of Biomimetic Dentistry are:
+
+### serviceDetail/toothColouredRestoration/TCRContent.js
+- Tooth-Coloured Fillings
+- Revolutionizing Dental Aesthetics
+- Aesthetic Harmony with Composite Restorations
+- The Advantages Beyond Aesthetics
+- Preserving Natural Structure
+- Reducing Sensitivity
+- Enhanced Durability
+- What is Tooth Bonding?
+- A Painless Cosmetic Solution for a Smile You’ll Love
+- Reasons to Choose Composite Filling
+- The Dental Bonding Process
+
+### serviceDetail/toothColouredRestoration/TCRRoot.js
+- {title}
+
+### serviceDetail/toothColouredRestoration/ToothColouredRestoration.js
+- Minor Damage and Misshapen Teeth
+- Localized Tooth Discoloration
+
+### serviceDetail/veneers/VeneersContent.js
+- What Veneers Treat?
+- How do we craft your New Smile?
+- First Appointment: Designed just for you
+- Second Appointment: Your Opinion Matters
+- Third Appointment: Custom Crafted for Beauty
+- A Smile that Lasts
+- Meet your Veneers Team
+
+### serviceDetail/veneers/VeneersPorcelain.js
+- How to Take Care for Porcelain Veneers?
+
+### serviceDetail/veneers/VeneersRoot.js
+- {title}
+
+### services/SeviceBanner.js
+- Excellence in dentistry
+
+### smileMakeoverLanding/SmileBanner.js
+- Your Perfect Smile  Starts Here
+
+### smileMakeoverLanding/SmileDream.js
+- A Relaxing, No-Judgement Space
+- Flexible Payment Options
+- Long-Lasting Results
+- Trusted Dental Experts
+- Your Dream Smile  Designed  Just for You
+
+### smileMakeoverLanding/SmileForm.js
+- Experience the Art of an Aesthetic Smile Makeover with Dr. Dheeraj Setia
+- Dr. Dheeraj Setia
+
+### smileMakeoverLanding/SmileLogos.js
+- International Quality Standards
+
+### smileMakeoverLanding/SmileOptions.js
+- Smile Makeover Options at The Dental Roots
+- {option.title}
+
+### smileMakeoverLanding/SmileServices.js
+- Who Is a Good Candidate for a Smile Makeover?
+
+### smileMakeoverLanding/SmileTabber.js
+- Answers to Your Smile Makeover Questions
+
+### smileMakeoverLanding/SmileTestimonial.js
+- Patients Testimonials
+
+### smileMakeoverLanding/SmileVisitors.js
+- Your New Smile in Just One Day: The Process
+
+### smileMakeoverLanding/Smilebg.js
+
+### testimonial/TestimonialBanner.js
+- Testimonials
+
+### thankyou/Thankyou.js
+- Thank you
+
+### whyVisitTheDentist/WhyVisitTheDentistContent.js
+- How often should i visit the dentist?
+- What happens when i see the dentist?
+- Prevent And Restore.

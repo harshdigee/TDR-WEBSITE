@@ -1,0 +1,519 @@
+.banner
+    &.service-banner
+        .container
+            max-width: 95%
+            @include respond-to(screen-520)
+                max-width: 100%
+            .content
+                @include respond-to(screen-520)
+                    text-align: center
+        .banner_asideRight
+            @include respond-to(screen-991)
+                display: none
+
+    .banner_link
+        text-align: right
+        ul
+            display: inline-block
+            li
+                display: inline-block
+                vertical-align: middle
+        .whatsapp
+            a
+                background: transparent
+                color: $white
+                border-radius: 25px
+                display: flex
+                align-items: center
+                height: 42px
+                justify-content: center
+                min-width: 198px
+                width: 100%
+                text-align: center
+                border: 1px solid $white
+                img,span
+                    display: inline-block
+                    vertical-align: middle
+                img
+                    margin-right: 8px
+        .video_icon
+            width: 50px
+            height: 50px
+            margin-left: 25px
+            &::before
+                width: 50px
+                height: 50px
+
+.DR-service-details
+    .flex
+        .aside_left
+            flex: 1
+        .aside_right
+            flex: 0 1 435px
+            max-width: 435px
+            width: 100%
+            padding-left: 40px
+            @include respond-to(screen-991)
+                flex: 0 1 335px
+                max-width: 335px
+                padding-left: 15px
+            @include respond-to(screen-767)
+                display: none
+    .content
+        text-align: left
+        p
+            margin-bottom: 15px
+            text-align: justify
+        h2,h3,h4,h5,h6
+            margin: 25px 0 12px
+        ul
+            padding-left: 15px
+            margin: 15px 0
+            li
+                display: block
+                padding-left: 15px
+                margin: 3px 0
+                position: relative
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    width: 7px
+                    height: 7px
+                    border-radius: 20px
+                    background: $primary
+                    top: 8px
+        table
+            border-collapse: collapse
+            border-spacing: 0
+            margin-top: 15px
+            @include respond-to(screen-767)
+        tr
+            td
+                padding: 5px
+                border: 1px solid #ccc
+                font-size: 14px
+            th
+                padding: 5px
+                border: 1px solid #ccc
+                background: #f5f5f5
+                font-size: 14px
+                line-height: 18px
+
+.book-appointment
+    background: #d5d5d5 url('../images/service/shape.png')
+    background-repeat: no-repeat
+    padding: 40px
+    position: sticky
+    top: 100px
+    @include respond-to(screen-991)
+        padding: 25px
+    h4
+        color: $primary
+        font-weight: $FontN
+        margin-bottom: 20px
+    .form
+        .form-group
+            .form-control
+                background: transparent
+                color: $black
+                font-size: 14px
+                font-family: $DM
+                border-color: $black
+            label
+                color: $black
+                font-size: 14px
+                font-family: $DM
+            &.valid
+                label
+                    opacity: .8
+        .btn-form
+            margin-top: 45px
+            .btn
+                display: block
+                width: 100%
+                background: $primary
+                border: 1px solid $primary
+                border-radius: 35px
+                padding: 11px 0
+                text-align: center
+                color: $white
+                cursor: pointer
+                transition: .5s ease
+                &:hover
+                    background: $secondry
+                    border-color: $secondry
+
+.DR-Service-Inn-Sec-B
+    position: relative
+    .bg
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: linear-gradient(to right, #000000d9, transparent)
+        img
+            width: 100%
+            display: block
+            height: 100%
+            object-fit: cover
+    .advantages_service
+        padding: 65px 0
+        position: relative
+        z-index: 1
+        @include respond-to(screen-767)
+            padding: 30px 0
+        .container-fluid
+            padding: 0 90px
+            height: 100%
+            display: flex
+            align-items: center
+            @include respond-to(screen-991)
+                padding: 0 25px
+
+            @include respond-to(screen-520)
+                padding: 0 15px
+
+            .content
+                max-width: 535px
+                @include respond-to(screen-991)
+                    max-width: 450px
+                p
+                    margin-bottom: 15px
+                h2
+                    line-height: 36px
+                    @include respond-to(screen-991)
+                        font-size: 25px
+                li,p,h2,h3,a
+                    color: $white
+                    font-weight: $FontN
+                ul
+                    margin: 20px 0 20px 15px
+                    @include respond-to(screen-991)
+                        margin: 15px 0 25px 15px
+                    li
+                        display: block
+                        font-size: 18px
+                        font-weight: $FontB
+                        padding-left: 24px
+                        position: relative
+                        margin: 5px 0
+                        @include respond-to(screen-991)
+                            font-size: 15px
+                            padding-left: 17px
+                            font-weight: $FontN
+                            margin: 2px 0
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 0
+                            top: 8px
+                            width: 10px
+                            height: 10px
+                            background: $white
+                            border-radius: 20px
+                            @include respond-to(screen-991)
+                                top: 9px
+                                width: 6px
+                                height: 6px
+        .action_btn
+            @include respond-to(screen-520)
+                display: block
+                .btn-appointment,.btn-call
+                    @include respond-to(screen-520)
+                        flex: 0 1 100%
+                        max-width: 100%
+                        width: 100%
+                        padding: 6px 0
+                    a
+                        @include respond-to(screen-520)
+                            display: block
+                            width: 100%
+                            text-align: center
+.action_btn
+    display: flex
+    flex-wrap: wrap
+    .btn-appointment
+        padding-left: 0
+        flex: 0 1 50%
+        max-width: 50%
+        padding-right: 10px
+        a
+            padding: 7px 25px
+            display: block
+            text-align: center
+            @include respond-to(screen-991)
+                font-size: 14px
+    .btn-call
+        flex: 0 1 50%
+        max-width: 50%
+        padding-left: 10px
+        a
+            display: block
+            text-align: center
+            padding: 7px 0
+            border: 1px solid $white
+            border-radius: 35px
+            color: $white
+            background: rgba(0,0,0,0)
+            transition: .5s ease
+            @include respond-to(screen-991)
+                font-size: 14px
+                background: $secondry
+                border-color: $secondry
+            &:hover
+                background: $secondry
+                border-color: $secondry
+
+.DR-Service-Inn-Sec-C
+    padding: 60px 0
+    background: $white url('../images/service/shape_w.png')
+    background-repeat: no-repeat
+    background-position: 100% 62%
+    @include respond-to(screen-520)
+        padding: 40px 0 0
+    .container-fluid
+        padding: 0 40px
+        @include respond-to(screen-991)
+            padding: 0 15px
+    .heading
+        max-width: 490px
+        width: 100%
+        margin: 0 auto 60px
+        @include respond-to(screen-520)
+            margin-bottom: 40px
+        h2
+            font-weight: $FontN
+    ul
+        padding-left: 15px
+        margin: 15px 0
+        li
+            display: block
+            padding-left: 15px
+            margin: 3px 0
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                left: 0
+                width: 7px
+                height: 7px
+                border-radius: 20px
+                background: $primary
+                top: 8px
+    .flex
+        .col
+            flex: 0 1 50%
+            max-width: 50%
+            width: 100%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+
+    figure
+        padding-right: 40px
+        position: sticky
+        top: 100px
+        @include respond-to(screen-1230)
+            padding-right: 0
+        @include respond-to(screen-991)
+            top: 80px
+        @include respond-to(screen-520)
+            padding: 0
+            position: static
+
+        img
+            display: block
+            width: 100%
+    .content
+        width: 100%
+        padding-left: 35px
+        @include respond-to(screen-1230)
+            width: 100%
+        @include respond-to(screen-991)
+            padding-left: 15px
+        @include respond-to(screen-520)
+            width: 100%
+            padding: 25px 0
+        p
+            margin-bottom: 25px
+            text-align: justify
+            @include respond-to(screen-991)
+                margin-bottom: 15px
+        h4
+            margin-bottom: 15px
+            color: $primary
+        table
+            border-collapse: collapse
+            border-spacing: 0
+            margin-top: 15px
+            tr
+                td
+                    padding: 5px
+                    border: 1px solid #ccc
+                th
+                    padding: 5px
+                    border: 1px solid #ccc
+                    background: #f5f5f5
+    .action_btn
+        max-width: 505px
+        width: 100%
+        margin: 98px auto 0
+        @include respond-to(screen-520)
+            margin: 0
+            display: block
+        .btn-appointment
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 6px 0
+            .btn
+                background: $primary
+                border-color: $primary
+                @include respond-to(screen-991)
+                    background: $white
+                    color: $primary
+                &:hover
+                    background: $white
+                    color: $primary
+        .btn-call
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 6px 0
+            a
+                border-color: $primary
+                color: $primary
+                @include respond-to(screen-991)
+                    background: $primary
+                    color: $white
+                &:hover
+                    background: $primary
+                    color: $white
+
+.DR_Faq-SecA
+    padding: 50px 0 80px
+    @include respond-to(screen-675)
+        padding-bottom: 20px
+    .heading
+        margin-bottom: 55px
+        @include respond-to(screen-520)
+            margin-bottom: 30px
+.freqAskQuertion
+    .item
+        border-bottom: 1px solid #e1e1e1
+        .faq-title
+            font-size: 18px
+            font-weight: $FontB
+            color: $black
+            background: $white
+            padding: 12px
+            position: relative
+            padding-right: 45px
+            transition: .5s ease
+            cursor: pointer
+            @include respond-to(screen-520)
+                padding-left: 0
+            &::before,&::after
+                content: ""
+                position: absolute
+                background: $text
+                pointer-events: none
+            &::before
+                width: 12px
+                height: 2px
+                right: 16px
+                top: 23px
+            &::after
+                width: 2px
+                height: 12px
+                right: 21px
+                top: 18px
+                opacity: 1
+                transition: .5s ease
+            &.active
+                background: #ebebeb
+
+                &::after
+                    opacity: 0
+
+        .faq-content
+            padding: 15px 12px 30px
+            display: none
+.testislide
+    padding: 0 60px
+    @include respond-to(screen-991)
+        padding: 0 7px
+    .owl-item
+        padding: 6px
+        @include respond-to(screen-991)
+            padding: 0
+
+.section-more-service
+    padding: 50px 6px 80px
+    @include respond-to(screen-991)
+        padding: 30px 0
+    .container-fluid
+        padding: 0
+    .heading
+        margin-bottom: 40px
+        @include respond-to(screen-991)
+            margin-bottom: 25px
+    .moreServiceSlide
+        padding: 0 60px
+        @include respond-to(screen-991)
+            padding: 0 7px
+    .owl-item
+        padding: 6px
+        @include respond-to(screen-520)
+            padding: 0
+.invisilign-benefits
+    display: flex
+    flex-wrap: wrap
+    .col1
+        width: 50%
+        padding: 20px
+        text-align: center
+        border: 1px solid #f5f5f5
+        h3
+            font-size: 18px
+            font-weight: 600
+            margin: 10px 0px 0
+        p
+            font-size: 16px
+            padding: 10px 0px
+            margin: 0
+            text-align: center
+.aligners-helps
+    display: flex
+    flex-wrap: wrap
+    .col1
+        width: 33%
+        padding: 20px
+        text-align: center
+        border: 1px solid #f5f5f5
+        h3
+            font-size: 18px
+            font-weight: 600
+            margin: 10px 0px 0
+.service-banner
+    h1
+        text-align: left
+    p
+        text-align: left
+
+.braces-table
+    @include respond-to(screen-991)
+        overflow: scroll
+        width: 100%
+        max-width: 350px
+        img
+            max-width: 150px  

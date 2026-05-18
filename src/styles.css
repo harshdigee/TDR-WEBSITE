@@ -1,0 +1,79 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-sans: 'DM Sans', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-brand-1: var(--brand-1);
+  --color-brand-2: var(--brand-2);
+  --color-brand-3: var(--brand-3);
+  --color-brand-4: var(--brand-4);
+  --color-brand-5: var(--brand-5);
+  --color-brand-6: var(--brand-6);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-border: var(--border);
+}
+
+:root {
+  /* Brand purples sampled from dentalroots.com logo */
+  --brand-1: #4A1A5C;   /* deep plum */
+  --brand-2: #6B2C7E;   /* primary brand purple */
+  --brand-3: #8A3FA0;   /* mid */
+  --brand-4: #B47AC9;   /* lavender */
+  --brand-5: #E2C9EC;   /* pale */
+  --brand-6: #F5EAF7;   /* blush tint */
+
+  --ink: #1D1428;
+  --ink-2: #4A3C60;
+  --ink-3: #7A6D90;
+
+  --background: #FFFFFF;
+  --foreground: #1D1428;
+  --primary: #6B2C7E;
+  --primary-foreground: #FFFFFF;
+  --border: rgba(107,44,126,0.14);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * { border-color: var(--border); }
+  body {
+    background: #FFFFFF;
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  html { scroll-behavior: smooth; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #f8f3fb; }
+  ::-webkit-scrollbar-thumb { background: var(--brand-3); border-radius: 3px; }
+}
+
+@layer utilities {
+  .font-serif { font-family: 'Cormorant Garamond', serif; }
+  .font-script { font-family: 'Great Vibes', cursive; }
+}
+
+/* Blog article prose styles */
+.prose-dental { color: var(--ink-2); line-height: 1.8; font-size: 15px; }
+.prose-dental p { margin-bottom: 1.25rem; }
+.prose-dental h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2.5vw, 30px); font-weight: 400; color: var(--ink); margin: 2rem 0 0.75rem; }
+.prose-dental h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(17px, 2vw, 22px); font-weight: 500; color: var(--ink); margin: 1.5rem 0 0.5rem; }
+.prose-dental ul, .prose-dental ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+.prose-dental ul { list-style: disc; }
+.prose-dental ol { list-style: decimal; }
+.prose-dental li { margin-bottom: 0.5rem; }
+.prose-dental strong { font-weight: 600; color: var(--ink); }
+.prose-dental em { font-style: italic; color: var(--ink-2); }
+.prose-dental blockquote { border-left: 3px solid var(--brand-2); padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: var(--ink-2); }
+.prose-dental a { color: var(--brand-2); text-decoration: underline; }

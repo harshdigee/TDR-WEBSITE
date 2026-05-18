@@ -1,0 +1,189 @@
+.model.humbuger_navigation
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    transform: translateX(100%)
+    z-index: 4
+    transition: .5s ease
+    &.is-open
+        transform: translateX(0%)
+        .overlay
+            opacity: .3
+    .model-body
+        max-width: 420px
+        width: 100%
+        background-color: $white
+        background-image: url('../images/icon_leaf.png')
+        background-repeat: no-repeat
+        background-position: bottom right
+        padding: 45px 0px
+        padding-bottom: 20px
+        padding-right: 0
+        margin-left: auto
+        margin-right: 0
+        height: 100%
+        position: relative
+        z-index: 11
+        @include respond-to(screen-767)
+            padding: 25px 0 
+    .close_model
+        img
+            width: 12px
+    .nav_link
+        li
+            display: block
+            a
+                display: block
+                color: $text
+                padding: 11px 0px
+                font-size: 25px
+                font-weight: 600
+                transition: .5s ease
+            &:hover
+                >a    
+                    color: $primary
+                    padding-left: 5px !important
+                
+    .cont_info 
+        bottom: 0
+        left: 0
+        right: 0
+        padding: 8px 0
+        padding-top: 20px
+        margin-top: 20px
+        border-top: 1px solid #e5e5e5
+
+        a
+            color: $text
+            font-size: 14px
+            display: inline-block
+            padding: 0
+            margin-right: 2px
+            transition: .5s ease
+            &:first-child
+                padding-right: 7px
+                border-right: 1px solid #e5e5e5
+                margin-right: 7px
+                line-height: 18px
+            img,span
+                display: inline-block
+                vertical-align: middle
+            img
+                margin-right: 8px
+        .social_links
+            margin-top: 25px
+            ul
+                li
+                    display: inline-block
+                    &:not(:last-child)
+                        margin-right: 4px
+                    a
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 33px
+                        height: 33px
+                        border: 1px solid $text
+                        border-radius: 3px
+                        padding: 0
+                        margin: 0
+                        transition: .5s ease
+                        svg
+                            width: 16px
+                            height: 16px
+                            path
+                                fill: $text
+                    &:hover
+                        a
+                            padding: 0
+                            border-color: $secondry
+                            background: $secondry
+                            svg
+                                path
+                                    fill: $white
+                            
+                
+    .oter_pages
+        margin-top: 15px
+        padding-top: 15px
+        border-top: 1px solid #e5e5e5
+        ul.nav_link
+            li
+                a
+                    font-size: 18px
+                    color: $text
+                    padding: 5px 0
+                    transition: .5s ease
+                    font-weight: $FontN
+
+    // Dropdown
+    .nav_link
+        li.dropdown
+            position: relative
+            a
+                display: block
+            .sub-nav-trigger
+                position: absolute
+                right: -45px
+                top: 7px
+                height: 30px
+                width: 30px
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                background: $white
+                transition: .5s ease
+                @include respond-to(screen-767)
+                    right: -2px
+                &::before,&::after
+                    content: ""
+                    position: absolute
+                    background: $text
+                    opacity: 1
+                    transition: .5s ease
+                &::before
+                    width: 2px
+                    height: 12px
+                &::after
+                    width: 12px
+                    height: 2px
+                &:hover
+                    background: #f1f1f1
+            .sub-nav
+                display: none
+                background: #f1f1f1
+                padding: 10px 0
+                margin: 0 -60px 0 -60px
+                padding-left: 60px
+                li
+                    a
+                        font-size: 18px
+                        line-height: $FontN
+                        padding: 3px 0
+                        color: $text
+                        font-weight: $FontN
+                        transition: .5s ease
+                        &:hover
+                            color: $primary
+            &.active
+                .sub-nav-trigger
+                    &::before
+                        opacity: 0
+
+    .model_scroll
+        height: 100%
+        overflow: hidden
+        overflow-y: scroll
+        padding: 10px 60px 15px
+        @include respond-to(screen-767)
+            padding: 10px 20px 15px
+        &::-webkit-scrollbar
+            width: 3px
+        &::-webkit-scrollbar-track
+            box-shadow: unset    
+            background: transparent
+        &::-webkit-scrollbar-thumb 
+            background-color: $primary

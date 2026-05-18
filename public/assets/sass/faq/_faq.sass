@@ -1,0 +1,51 @@
+.faq_page_style
+    .flex
+        .col1
+            flex: 0 1 40%
+            max-width: 40%
+            width: 100%
+            @include respond-to(screen-991)
+                display: none
+        .col2
+            flex: 0 1 60%
+            max-width: 60%
+            width: 100%
+            @include respond-to(screen-991)
+                flex: 0 1 100%
+                max-width: 100%
+    figure
+        @include respond-to(screen-992)
+            position: sticky
+            top: 120px
+    .freqAskQuertion 
+        .item 
+            border: 0
+            .faq-title
+                font-weight: $FontN
+                @include respond-to(screen-675)
+                    margin-left: -15px
+                    margin-right: -15px
+                    padding: 12px 15px
+                    padding-right: 40px
+
+                &.active
+                    color: $primary
+            .faq-content
+                @include respond-to(screen-675)
+                    padding: 15px 0
+                ul
+                    margin: 15px 0 
+                    li
+                        display: block
+                        padding-left: 15px
+                        margin: 3px 0
+                        position: relative
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 0
+                            width: 7px
+                            height: 7px
+                            border-radius: 20px
+                            background: $primary
+                            top: 8px

@@ -1,0 +1,150 @@
+User-agent: *
+Allow: /
+Disallow: /*?*
+Disallow: /admin/
+Disallow: .html
+
+Sitemap: https://www.thedentalroots.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+
+User-agent: Googlebot-Image
+Allow: /
+
+
+User-agent: Googlebot-News
+Allow: /
+
+
+User-agent: Googlebot-Video
+Allow: /
+
+
+User-agent: Google-Extended
+Allow: /
+
+
+User-agent: Googlebot/2.1
+Allow: /
+
+
+User-agent: bingbot
+Allow: /
+
+
+User-agent: Bingbot/2.0
+Allow: /
+
+
+User-agent: ChatGPT-User
+Allow: /
+
+
+User-agent: GPTBot
+Allow: /
+
+
+User-agent: GPTBot/1.1
+Allow: /
+
+
+User-agent: GPTBot/1.2
+Allow: /
+
+
+User-agent: OAI-SearchBot
+Allow: /
+
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+
+User-agent: FacebookBot
+Allow: /
+
+
+User-agent: ClaudeBot
+Allow: /
+
+
+User-agent: Claude-Web
+Allow: /
+
+
+User-agent: anthropic-ai
+Allow: /
+
+
+User-agent: Claude-User
+Allow: /
+
+
+User-agent: Claude-SearchBot
+Allow: /
+
+
+User-agent: Applebot
+Allow: /
+
+
+User-agent: Applebot-Extended
+Allow: /
+
+
+User-agent: Amazonbot
+Allow: /
+
+
+User-agent: NovaAct
+Allow: /
+
+
+User-agent: Bytespider
+Allow: /
+
+
+User-agent: CCBot
+Allow: /
+
+
+User-agent: Perplexity-User
+Allow: /
+
+
+User-agent: PerplexityBot
+Allow: /
+
+
+User-agent: DuckAssistBot
+Allow: /
+
+
+User-agent: cohere-ai
+Allow: /
+
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+
+User-agent: AI2Bot
+Allow: /
+
+
+User-agent: YouBot
+Allow: /
+
+
+User-agent: MistralAI-User
+Allow: /
+
+
+User-agent: Kangaroo Bot
+Allow: /

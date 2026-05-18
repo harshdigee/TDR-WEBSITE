@@ -1,0 +1,106 @@
+.testimonial-secInner
+    padding: 40px 0
+.testi-tab
+    padding-bottom: 45px
+    @include respond-to(screen-520)
+        padding-bottom: 20px
+    ul
+        text-align: center
+        li
+            display: inline-block
+            cursor: pointer
+            color: $black
+            position: relative
+            font-size: 18px
+            margin: 0 20px
+            padding: 11px 0
+            @include respond-to(screen-520)
+                margin: 0 8px
+                padding: 10px 0
+            &::after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 50%
+                right: 50%
+                bottom: 0
+                height: 2px
+                background: $primary
+                transition: .5s ease
+            &.active
+                color: $primary
+                &::after
+                    left: 0
+                    right: 0
+.testimonial-grids
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            padding: 15px
+            @include respond-to(screen-767)
+                flex: 0 1 50%
+                max-width: 50%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 8px 0
+
+    .item
+        position: relative
+        height: 100%
+        overflow: hidden
+        figure
+            height: 100%
+            position: relative
+            &:after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                height: 40%
+                opacity: .66
+                background: linear-gradient(to top, $black, $black, transparent)
+            img
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .content
+            position: absolute
+            bottom: 0
+            padding: 30px
+            left: 0
+            right: 0
+            padding-right: 90px
+            @include respond-to(screen-991)
+                padding: 10px
+                padding-right: 60px
+            @include respond-to(screen-675)
+                bottom: 15px
+            .video_icon
+                width: 44px
+                height: 44px
+                position: absolute
+                right: 20px
+                top: 50%
+                transform: translateY(-50%)
+                &:before
+                    width: 44px
+                    height: 44px
+                img
+                    width: auto
+                    display: block
+            .name
+                color: $white
+                font-size: 19px
+            .designation
+                font-size: 12px
+                color: $white
+                line-height: 18px   
+    .testimonial-tab
+        &:not(:first-child)
+            display: none
+                              

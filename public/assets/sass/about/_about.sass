@@ -1,0 +1,364 @@
+.year_estabis
+    background: #f5f5f5
+    padding: 33px 0
+    @include respond-to(screen-991)
+        padding: 20px 0
+    @include respond-to(screen-520)
+        padding: 15px 0
+    .container
+        max-width: 860px
+        @include respond-to(screen-365)
+            padding: 0
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            @include respond-to(screen-520)
+                flex: 0 1 33.33%
+                max-width: 33.33%
+            &:nth-child(2)
+                @include respond-to(screen-991)
+                    border-left: 1px solid #d9d9d9
+                    border-right: 1px solid #d9d9d9
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+    .card
+        padding-left: 100px
+        position: relative
+        @include respond-to(screen-991)
+            padding: 0
+            display: flex
+            align-items: center
+        @include respond-to(screen-520)
+            padding: 0
+            flex: 0 1 100%
+            max-width: 100%
+            display: block
+            text-align: center
+        .count
+            font-size: 36px
+            color: $primary
+            position: absolute
+            left: 0
+            top: 0
+            width: 100px
+            bottom: 0
+            display: flex
+            align-items: center
+            @include respond-to(screen-991)
+                font-size: 28px
+                position: static
+                width: auto
+            @include respond-to(screen-520)
+                font-size: 25px
+                position: static
+                width: auto
+                margin-bottom: 5px
+                display: inline-block
+        p
+            color: $black
+            line-height: 18px
+            @include respond-to(screen-991)
+                padding-left: 15px
+            @include respond-to(screen-520)
+                padding: 0
+                font-size: 13px
+                line-height: 18px
+                color: #666
+
+            span
+                display: block
+
+.about-DentalROoot-SecA
+    padding: 55px 0 65px
+    background: $white
+    @include respond-to(screen-991)
+        padding: 30px 0
+    .container
+        max-width: 830px
+    .content
+        text-align: center
+        .icon
+            display: inline-block
+            img
+                display: block
+        h4
+            color: $black
+            margin-bottom: 15px
+            font-weight: $FontN
+        p
+            margin-bottom: 15px
+        .read_more
+            margin-top: 45px
+            @include respond-to(screen-520)
+                margin-top: 25px
+
+.RDental-Home-SecA
+    &.about_inner_dric
+        figure
+            .video_icon
+                box-shadow: 0 0 78px 31px #000000a1
+        .content
+            h2
+                color: $black
+            .designation
+                @include respond-to(screen-991)
+                    margin-bottom: 8px
+            p
+                @include respond-to(screen-991)
+                    margin-bottom: 5px
+            .link
+                margin-top: 25px
+                @include respond-to(screen-991)
+                    margin-top: 10px
+                a
+                    font-weight: $FontB
+            .signature
+                margin-top: 30px
+                @include respond-to(screen-991)
+                    margin-top: 8px
+
+.about-DentalROoot-SecB
+    padding: 65px 6px 25px
+    @include respond-to(screen-991)
+        padding: 40px 0 20px
+    .container-fluid
+        display: block
+    .heading
+        max-width: 445px
+        width: 100%
+        margin: 0 auto 55px
+        h2
+            margin-bottom: 12px
+            color: $black
+        p
+            line-height: 18px
+    .DenTeamSlide
+        padding: 0 60px
+        @include respond-to(screen-991)
+            padding: 0
+        @include respond-to(screen-767)
+            padding: 0 15px
+        .owl-item
+            padding: 0 10px
+            @include respond-to(screen-991)
+                padding: 0
+        .item
+            position: relative
+            overflow: hidden
+            border-radius: 25px
+            figure
+                position: relative
+                img
+                    display: block
+                    filter: grayscale(1)
+                    transition: .5s ease
+
+            .content
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding: 20px
+                padding-bottom: 13px
+                text-align: center
+                pointer-events: none
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 80px
+                    background: $white
+                    opacity: .8
+                    pointer-events: none
+                    transition: .5s ease
+                .name
+                    color: $black
+                    position: relative
+                    z-index: 1
+                    font-weight: 600
+                    color: $primary
+                    line-height: 19px
+                    transition: .5s ease
+                .designation
+                    z-index: 1
+                    color: $primary
+                    position: relative
+                    transition: .5s ease
+                    line-height: 18px
+            &:hover
+                .content
+                    &::after
+                        background: $primary
+                    .name,.designation
+                        color: $white
+                figure
+                    img
+                        filter: grayscale(0)
+
+.about-DentalROoot-SecC
+    padding: 30px 6px 60px
+    @include respond-to(screen-991)
+        padding: 0
+    @include respond-to(screen-520)
+        padding: 30px 0
+    .conatiner-fluid
+        width: 90%
+        margin: 0 auto
+        @include respond-to(screen-991)
+            width: 100%
+    .heading
+        max-width: 700px
+        width: 100%
+        margin: 0 auto 40px
+        @include respond-to(screen-991)
+            max-width: 600px
+            margin-bottom: 0px
+        @include respond-to(screen-520)
+            max-width: 520px
+            padding: 0 15px
+
+    .award_slider
+        padding: 0 60px
+        @include respond-to(screen-991)
+            padding: 0 30px
+        @include respond-to(screen-520)
+            padding: 0 33px
+        .owl-item
+            position: relative
+            z-index: 1
+        .item
+            padding: 70px 0
+            @include respond-to(screen-520)
+                padding: 35px 0
+            img
+                transform: scale(.8)
+                transition: .5s ease
+                @include respond-to(screen-520)
+                    transform: scale(1)
+        .center
+            z-index: 2
+            .item
+                img
+                    transform: scale(1.3)
+        .owl-nav
+            button
+                width: 30px
+                img
+                    @include respond-to(screen-520)
+                        width: 8px
+.teamPopup-model
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 4
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    transform: translateY(200%)
+    transition: .5s ease
+    &.is-open
+        transform: translateY(0%)
+        .overlay
+            pointer-events: all
+        .model-body
+            transform: translateY(0%)
+            transition-delay: .3s
+            @include respond-to(screen-520)
+                height: -webkit-fill-available
+                overflow: auto
+    .model-body
+        max-width: 992px
+        width: 100%
+        background: $white
+        padding: 30px
+        position: relative
+        transform: translateY(100%)
+        transition: .5s ease
+        transition-delay: 0s
+        padding-right: 0
+    .team-model-wrapper
+        .item
+            .card
+                .flex
+                    @include respond-to(screen-520)
+                        text-align: -webkit-center
+                    .col1
+                        flex: 0 1 30%
+                        max-width: 30%
+                        width: 100%
+                        @include respond-to(screen-520)
+                            flex: 0 1 100%
+                            max-width: 100%
+                            width: 100%
+                        figure
+                            img
+                                @include respond-to(screen-520)
+                                    width: 225px
+                    .col2
+                        flex: 0 1 70%
+                        max-width: 70%
+                        width: 100%
+                        padding-left: 25px
+                        max-height: 396px
+                        overflow-y: auto
+                        padding-right: 30px
+                        &::-webkit-scrollbar
+                            width: 3px
+                            background: none
+                        &::-webkit-scrollbar-track
+                            box-shadow: none
+                        &::-webkit-scrollbar-thumb
+                            background-color: $primary
+                            outline: 0
+                        @include respond-to(screen-520)
+                            flex: 0 1 100%
+                            max-width: 100%
+                            width: 100%
+                            padding-left: 0
+                            max-height: 100%
+                            overflow-y: initial
+        .team-content-wrapper
+            .content
+                .line
+                    margin: 15px 0
+                    background: $text
+                    height: 1px
+                    opacity: .2
+                .name
+                    font-size: 22px
+                    color: $black
+                    font-weight: $FontB
+                    @include respond-to(screen-520)
+                        margin-top: 10px
+                .designation
+                    color: $text
+                    opacity: .8
+                .deg
+                    color: $text
+                    opacity: .8
+                p
+                    color: $text
+                    margin-bottom: 15px
+                    @include respond-to(screen-520)
+                        text-align: justify
+                ul
+                    padding-left: 20px
+                    margin-bottom: 15px
+                    li
+                        color: $text
+                        list-style: disc
+                        &::marker
+                            color: $primary
+
+.international-tm
+    .heading
+        max-width: 900px

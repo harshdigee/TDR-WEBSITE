@@ -1,0 +1,71 @@
+.DR-Service-Inn-Sec-A
+    background: $white
+    padding: 45px 0
+    @include respond-to(screen-520)
+        padding: 15px 0
+    .container
+        max-width: 1290px
+.service-grid
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            padding: 10px
+            @include respond-to(screen-991)
+                padding: 6px
+            @include respond-to(screen-767)
+                flex: 0 1 50%
+                max-width: 50%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 8px 0
+    .card
+        a
+            display: block
+            position: relative
+            figure
+                display: block
+                position: relative
+                overflow: hidden
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 45%
+                    background: linear-gradient(to top, #000, #000000d1, transparent)
+                    opacity: .5
+                    pointer-events: none
+                img
+                    display: block
+                    width: 100%
+                    transform: scale(1)
+                    transition: 2s ease
+            &:hover
+                figure
+                    img
+                        transform: scale(1.1)
+            .content
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding: 22px
+                max-width: 360px
+                @include respond-to(screen-991)
+                    padding: 15px
+                h5
+                    font-size: 22px
+                    color: $white
+                p
+                    font-size: 14px
+                    line-height: 18px
+                    color: $white
+                    display: -webkit-box
+                    -webkit-line-clamp: 2
+                    -webkit-box-orient: vertical
+                    overflow: hidden
+                    text-overflow: ellipsis 

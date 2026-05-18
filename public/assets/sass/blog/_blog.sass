@@ -1,0 +1,223 @@
+.blog-listing
+    padding: 25px 0
+    @include respond-to(screen-991)
+        padding: 15px 0
+    .container-fluid
+        padding: 0 25px
+        @include respond-to(screen-991)
+            padding: 0 9px
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            padding: 15px
+            @include respond-to(screen-1140)
+                padding: 8px
+            @include respond-to(screen-991)
+                padding: 6px
+            @include respond-to(screen-767)
+                flex: 0 1 50%
+                max-width: 50%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+
+.blog-grid  
+    .card
+        a
+            display: block
+            position: relative
+            figure
+                display: block
+                position: relative
+                overflow: hidden
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 45%
+                    background: linear-gradient(to top, #000, #000000d1, transparent)
+                    opacity: .7
+                    pointer-events: none
+                    @include respond-to(screen-991)
+                        height: 50%
+                        opacity: .8
+                img
+                    display: block
+                    width: 100%
+                    transform: scale(1)
+                    transition: 2s ease
+            &:hover
+                figure
+                    img
+                        transform: scale(1.1)
+            .content
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding: 28px
+                max-width: 360px
+                @include respond-to(screen-1140)
+                    padding: 15px
+                    bottom: 10px
+                @include respond-to(screen-991)
+                    bottom: 6px
+                .date
+                    color: $white
+                    font-size: 13.61px
+                    opacity: .76
+                p
+                    color: $white
+                    font-size: 20.87px
+                    @include respond-to(screen-991)
+                        font-size: 16px
+                        line-height: 22px
+
+.banner
+    &.blog-detail-banner
+        .container
+            max-width: 100%
+        .banner-content
+            .content
+                max-width: 390px
+                padding-left: 45px
+                @include respond-to(screen-767)
+                    max-width: 100%
+                    padding: 0
+                .date
+                    color: $white
+                    opacity: .7
+                    font-size: 14px
+                    margin-bottom: 10px
+                h1
+                    line-height: normal
+                    @include respond-to(screen-767)
+                        font-size: 22px
+                
+
+.blog-detail-secA
+    padding: 55px 0
+    @include respond-to(screen-767)
+        padding: 30px 0
+    .container-fluid
+        padding: 0 55px   
+        @include respond-to(screen-1140)
+            padding: 0 15px 
+    .flex
+        .aside_left
+            flex: 1   
+            padding-right: 35px  
+            @include respond-to(screen-1140)
+                padding-right: 15px
+            @include respond-to(screen-767)
+                padding: 0
+            
+
+        .aside_right
+            flex: 0 1 307px
+            max-width: 307px
+            width: 100%   
+            @include respond-to(screen-1140)
+                padding: 0 15px
+            @include respond-to(screen-991)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+.blog-detail             
+    width: 90%
+    @include respond-to(screen-1440)
+        width: 100%
+    .content
+        p
+            margin-bottom: 20px
+            text-align: justify
+        h3
+            color: $primary
+            margin-bottom: 20px      
+            font-weight: $FontN     
+        h2,h3,h4,h5,h6
+            margin: 20px 0 15px
+        p
+            margin-bottom: 15px
+        ul
+            padding-left: 15px
+            margin-bottom: 25px
+            li
+                display: block
+                padding-left: 20px
+                position: relative
+                margin-bottom: 5px
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    top: 8px
+                    width: 7px
+                    height: 7px
+                    background: $primary
+                    border-radius: 15px
+.blog-aside
+    h4
+        color: $primary
+        border-bottom: 1px solid $primary
+        font-weight: $FontN
+        padding-bottom: 15px
+        margin-bottom: 7px
+    
+.blog-category 
+    ul
+        padding: 15px 0
+        margin-bottom: 20px
+        li
+            display: block
+            a
+                font-size: 18px
+                color: $text
+                display: block
+                padding: 5px 0
+.share_link
+    .social-links
+        padding-top: 15px
+        ul
+            li
+                &:not(:last-child)
+                    margin-right: 8px
+                    
+                a
+                    width: 35px
+                    height: 35px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 1px solid $primary
+                    border-radius: 40px
+                    transition: .5s ease
+                    svg
+                        path
+                            fill: $primary
+                    &:hover
+                        background: $primary
+                        svg
+                            path
+                                fill: $white
+
+.blog-related-sec
+    padding: 30px 6px 80px
+    @include respond-to(screen-991)
+        padding: 30px 0
+    .container-fluid
+        padding: 0
+    .heading
+        margin-bottom: 30px
+    .morebloSlide
+        padding: 0 60px
+        @include respond-to(screen-991)
+            padding: 0 15px
+    .owl-item
+        padding: 6px     
+        @include respond-to(screen-991)
+            padding: 0

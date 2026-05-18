@@ -1,0 +1,28 @@
+.about-DentalROoot-SecA
+    &.privacy-DentalROoot-SecA
+        .container-fluid
+            max-width: 90%
+            @include respond-to(screen-1366)
+                max-width: 100%
+        .content
+            text-align: left
+            h2,h3,h4,h5,h6
+                margin: 20px 0 15px
+            p
+                margin-bottom: 15px
+            ul
+                padding-left: 15px
+                li
+                    display: block
+                    padding-left: 20px
+                    position: relative
+                    margin-bottom: 5px
+                    &::before
+                        content: ""
+                        position: absolute
+                        left: 0
+                        top: 8px
+                        width: 7px
+                        height: 7px
+                        background: $primary
+                        border-radius: 15px

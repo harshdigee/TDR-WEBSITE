@@ -1,0 +1,322 @@
+footer
+    background: linear-gradient(to right, #bababa, $white)
+    @include respond-to(screen-767)
+        background: #f1f1f1
+        margin-bottom: 39px
+                
+    .footer-top
+        border-bottom: 1px solid #5e326326
+        @include respond-to(screen-520)
+            border: 0
+            background: #fff
+            padding-bottom: 15px
+        .container
+            @include respond-to(screen-520)
+                padding: 0 7px
+        .flex
+            justify-content:center
+            .col
+                flex: 0 1 20%
+                max-width: 20%
+                width: 100%
+                padding: 30px 0
+                @include respond-to(screen-520)
+                    flex: 0 1 50%
+                    max-width: 50%
+                    padding: 7px
+                &:not(:last-child)
+                    border-right: 1px solid #5e326326
+                    @include respond-to(screen-520)
+                        border: 0
+                &:last-child
+                    @include respond-to(screen-520)
+                        flex: 0 1 100%
+                        max-width: 100%
+                    .item
+                        @include respond-to(screen-520)
+                            position: relative
+                        .icon
+                            @include respond-to(screen-520)
+                                position: absolute
+                                top: 0
+                                bottom: 0
+                                left: 0
+                                width: 65px
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                margin: 0
+                    
+        .item
+            position: relative
+            padding-left: 60px
+            @include respond-to(screen-1140)
+                padding-left: 45px
+            @include respond-to(screen-991)
+                padding-left: 0
+                text-align: center
+            @include respond-to(screen-520)
+                border: 1px solid #f1f1f1
+                border-radius: 3px
+                padding: 15px 0
+            a.over_to_docTeam
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                z-index: 1
+            .icon
+                position: absolute
+                left: 0
+                top: 5px
+                width: 45px
+                @include respond-to(screen-991)
+                    display: inline-block
+                    margin-bottom: 8px
+                    position: static
+                img
+                    display: block
+                    margin: 0 auto
+                    @include respond-to(screen-991)
+                        width: auto
+                        height: 28px
+                img
+                    display: block
+                    margin: 0 auto
+                    @include respond-to(screen-992)
+                        height: 29px
+            .title
+                font-size: 18px
+                color: $primary
+                font-weight: $FontB
+                line-height: normal
+                @include respond-to(screen-991)
+                    font-size: 14px
+                @include respond-to(screen-520)
+                    color: $text
+                    margin: 5px
+            p
+                font-size: 18px
+                color: $primary
+                font-weight: $FontN
+                line-height: normal
+                @include respond-to(screen-991)
+                    font-size: 14px
+                a
+                    font-size: inherit
+                    color: inherit
+                    font-weight: $FontN
+                    display: inline-block
+                    line-height: inherit
+        &.fixed
+
+            @include respond-to(screen-992)
+                position: fixed
+                bottom: 0
+                left: 0
+                right: 0
+                z-index: 2
+                background: #dddddd
+                animation: try 1s ease
+            .flex
+                .col
+                    @include respond-to(screen-992)
+                        padding: 4px 0
+            .item 
+                .title
+                    @include respond-to(screen-992)
+                        font-size: 15px
+                p
+                    @include respond-to(screen-992)
+                        font-size: 15px
+                .icon 
+                    img
+                        @include respond-to(screen-992)
+                            height: 24px
+
+    .footer-bottom
+        padding: 75px 0
+        background: url('../images/footer/logo.png')
+        background-repeat: no-repeat
+        background-position: center
+        @include respond-to(screen-991)
+            padding: 35px 0 10px
+        .flex>div
+            @include respond-to(screen-767)
+                margin-bottom: 20px
+            &:nth-child(2)
+                @include respond-to(screen-991)
+                    padding-left: 30px
+                @include respond-to(screen-767)
+                    padding: 0
+                
+        .col1
+            flex: 0 1 24%
+            max-width: 24%
+            width: 100%
+            position: relative
+            @include respond-to(screen-767)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+            @include respond-to(screen-520)
+                order: 4
+        .col3
+            flex: 0 1 22%
+            max-width: 22%
+            width: 100%
+            @include respond-to(screen-991)
+                display: none
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+        .col2
+            flex: 0 1 18%
+            max-width: 18%
+            width: 100%
+            @include respond-to(screen-991)
+                flex: 0 1 24.33%
+                max-width: 24.33%
+            @include respond-to(screen-767)
+                flex: 0 1 33.33%
+                max-width: 33.33%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+                order: 1
+            
+            &:nth-child(3)
+                @include respond-to(screen-992)
+                    padding-right: 10px
+        .link_title
+            font-size: 20px
+            color: $primary
+            font-weight: $FontN
+            line-height: normal
+            margin-bottom: 15px
+            @include respond-to(screen-767)
+                font-weight: $FontB
+                margin-bottom: 10px
+        ul
+            li
+                display: block
+                a
+                    display: inline-block
+                    font-size: 15px
+                    color: $black
+                    line-height: normal
+                    font-weight: $FontN
+                    padding: 3px 0
+                    transition: .5s ease
+                    &:hover
+                        padding-left: 5px
+                        color: $primary
+        .social-links
+            margin-top: 30px 
+            @include respond-to(screen-767)
+                position: absolute
+                right: 0
+                top: 0
+                margin: 0
+            @include respond-to(screen-520)
+                position: static
+                margin-top: 30px
+            ul 
+                li
+                    display: inline-block
+                    margin-right: 6px
+                    @include respond-to(screen-991)
+                        margin-right: 2px
+                    a
+                        width: 37px
+                        height: 37px
+                        border-radius: 52px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        border: 1px solid $primary
+                        svg
+                            path
+                                fill: $primary
+                        &:hover
+                            padding: 0
+                            background: $primary
+                            svg
+                                path
+                                    fill: $white
+
+    .contact_info
+        p
+            color: $black
+            font-size: 16px
+            a
+                display: inline-block
+                color: $black
+    .contact_link
+        .whatsapp
+            margin-bottom: 15px
+            a
+                padding: 9px 40px
+                background: $primary
+                color: $white
+                border-radius: 25px
+                display: inline-block
+                min-width: 242px
+                width: 100%
+                text-align: center
+                @include respond-to(screen-1140)
+                    min-width: auto
+                    padding: 9px 23px
+                    max-width: 200px
+                img,span
+                    display: inline-block
+                    vertical-align: middle
+                img
+                    margin-right: 8px
+        .btn-appointment
+            padding: 0
+            .btn
+                color: $black
+                background: $white
+                box-shadow: -5px 0px 5px 1px #8080801f
+                min-width: 242px
+                width: 100%
+                text-align: center
+                @include respond-to(screen-1140)
+                    min-width: auto
+                    padding: 9px 12px
+                    max-width: 200px
+    .copy_right
+        margin-top: 40px
+        padding-top: 12px
+        border-top: 1px solid #a29a9a4d
+        @include respond-to(screen-520)
+            margin-top: 20px
+        .flex
+            .col
+                flex: 0 1 50%
+                max-width: 50%
+                width: 100%
+                @include respond-to(screen-767)
+                    flex: 0 1 100%
+                    max-width: 100%
+                    margin: 0
+        p
+            color: $black
+            font-size: 14px
+            @include respond-to(screen-767)
+                text-align: center
+    .made_by
+        text-align: right
+        @include respond-to(screen-767)
+            text-align: center
+        p
+            display: inline-block
+            span,img
+                display: inline-block
+                vertical-align: middle
+            span
+                padding-right: 8px

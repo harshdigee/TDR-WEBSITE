@@ -1,0 +1,238 @@
+.banner.career-banner
+    .banner-content
+        .flex
+            max-width: 1050px
+            width: 100%
+            align-items: center
+            justify-content: center
+            .col1
+                flex: 0 1 25%
+                max-width: 25%
+                width: 100%
+                @include respond-to(screen-991)
+                    flex: 0 1 100%
+                    max-width: 100%
+            .col2
+                flex: 0 1 75%
+                max-width: 75%
+                width: 100%
+                position: relative
+                @include respond-to(screen-991)
+                    flex: 0 1 100%
+                    max-width: 100%
+        .content
+            max-width: 415px
+            @include respond-to(screen-675)
+                margin: 0 auto
+            .btn_aply
+                position: absolute
+                right: 0
+                top: 0
+                @include respond-to(screen-675)
+                    position: static
+                    margin-top: 20px
+                a
+                    width: 160px
+                    text-align: center
+                    color: $white
+                    border-color: $white
+                    @include respond-to(screen-991)
+                        border-color: $primary 
+                    &:hover
+                        border-color: $primary 
+
+.section-career-inn-A
+    padding: 65px 0
+    @include respond-to(screen-675)
+        padding: 40px 0
+    .container
+        max-width: 1300px
+    .heading
+        max-width: 725px
+        width: 100%
+        margin: 0 auto 65px
+        @include respond-to(screen-675)
+            margin-bottom: 30px
+        h2
+            color: $primary
+            font-weight: $FontN
+            margin-bottom: 13px
+    .care_wokk
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            padding: 15px
+            @include respond-to(screen-991)
+                padding: 6px
+            @include respond-to(screen-767)
+                flex: 0 1 50%
+                max-width: 50%
+            @include respond-to(screen-520)
+                flex: 0 1 100%
+                max-width: 100%
+            &:last-child
+                @include respond-to(screen-767)
+                    flex: 0 1 100%
+                    max-width: 100%
+                
+        .card
+            text-align: center
+            padding: 15px 35px
+            background: $white
+            border: 1px solid #d7d7d7
+            height: 100%
+            border-radius: 5px
+            box-shadow: 0 0 26px 1px #ccc6
+            @include respond-to(screen-991)
+                padding: 15px
+            .icon
+                margin-bottom: 10px
+            .title
+                margin-bottom: 10px
+                font-size: 18px
+                color: $primary
+
+.section-career-inn-B
+    .heading
+        max-width: 725px
+        width: 100%
+        margin: 0 auto 65px
+        @include respond-to(screen-675)
+            margin-bottom: 35px
+        h2
+            color: $primary
+            font-weight: $FontN
+            margin-bottom: 13px
+    .freqAskQuertion 
+        .item 
+            border: 0
+            margin: 15px 0
+            .faq-title
+                background: #ebebeb
+                @include respond-to(screen-675)
+                    padding-left: 15px
+                &.active
+                    background: $primary
+                    color: $white
+                    &::before,&::after
+                        background: $white
+            .faq-content
+                border: 1px solid #ccc
+                border-top: 0
+                position: relative
+                .btn_aply
+                    position: absolute
+                    right: 15px
+                    top: 15px
+                    a
+                        border-radius: 4px
+                .content
+                    p
+                        margin-bottom: 5px
+                    .title
+                        font-size: 18px
+                        color: #212f52
+                        margin: 18px 0 10px
+                    ul
+                        padding-left: 20px
+                        margin-bottom: 35px
+                        li
+                            display: block
+                            position: relative
+                            margin: 0 0 5px
+                            padding-left: 20px
+                            &::before
+                                content: ""
+                                position: absolute
+                                left: 0
+                                top: 8px
+                                width: 7px
+                                height: 7px
+                                background: $primary
+                                border-radius: 20px
+
+                        
+
+.section-career-inn-C
+    padding: 75px 0
+    background-image: url('../images/career/leaf.png')
+    background-repeat: no-repeat
+    background-position: center right
+    @include respond-to(screen-675)
+        padding: 40px 0
+    .join_CareerForm
+        .heading
+            margin-bottom: 45px
+            @include respond-to(screen-675)
+                text-align: center
+                margin-bottom: 35px
+            h2
+                color: $primary
+        p
+            color: $black
+        .careerForm
+            max-width: 700px
+            width: 100%
+            .flex
+                justify-content: space-between
+                .col
+                    flex: 0 1 46%
+                    max-width: 46%
+                    @include respond-to(screen-520)
+                        flex: 0 1 100%
+                        max-width: 100%
+            .form
+                .form-group
+                    .form-control
+                        background: transparent   
+                        color: $black
+                        font-family: $DM
+                        border-color: $black
+                        padding: 10px 0
+                    label    
+                        color: $black   
+                        font-family: $DM
+                    &.valid
+                        label
+                            opacity: .8
+                    textarea.form-control
+                        height: 68px
+                .file-opload
+                    position: relative
+                    input.input-file
+                        position: absolute
+                        left: 0
+                        right: 0
+                        top: 0
+                        bottom: 0
+                        height: 100%
+                        width: 100%
+                        opacity: 0
+                        cursor: pointer
+                    p
+                        padding: 12px 20px
+                        background: #f1f1f1
+                        pointer-events: none
+                .btn-form
+                    margin-top: 25px
+                    @include respond-to(screen-675)
+                        margin-top: 15px
+                    .btn
+                        display: inline-block
+                        max-width: 200px
+                        width: 100%
+                        background: $primary
+                        border: 1px solid $primary
+                        border-radius: 35px
+                        padding: 11px 0
+                        text-align: center
+                        color: $white
+                        cursor: pointer
+                        transition: .5s ease
+                        @include respond-to(screen-991)
+                            background: $secondry
+                            border-color: $secondry
+                        &:hover
+                            background: $secondry
+                            border-color: $secondry
