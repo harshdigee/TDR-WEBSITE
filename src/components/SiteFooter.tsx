@@ -44,7 +44,11 @@ const socials: { label: string; href: string; Icon: ComponentType<LucideProps> }
   { label: "Instagram", href: "https://www.instagram.com/thedentalroots_in/", Icon: Instagram },
   { label: "X (Twitter)", href: "https://twitter.com/thedental_roots", Icon: Twitter },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/thedentalroots/", Icon: Linkedin },
-  { label: "YouTube", href: "https://www.youtube.com/channel/UCa_HxKrNIOJWI-cGjGLsKUw", Icon: Youtube },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/channel/UCa_HxKrNIOJWI-cGjGLsKUw",
+    Icon: Youtube,
+  },
 ];
 
 export function SiteFooter() {
@@ -54,9 +58,15 @@ export function SiteFooter() {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           {/* Brand column */}
           <div className="md:col-span-1">
-            <img src="/assets/images/logo.webp" alt="The Dental Roots" className="h-10 w-auto mb-5" loading="lazy" />
+            <img
+              src="/assets/images/logo.webp"
+              alt="The Dental Roots"
+              className="h-10 w-auto mb-5"
+              loading="lazy"
+            />
             <p className="text-xs leading-loose text-white/40 font-light mb-6">
-              Delivering world-class dental experiences across four premium clinics in Delhi and Gurugram.
+              Delivering world-class dental experiences across four premium clinics in Delhi and
+              Gurugram.
             </p>
             <div className="flex gap-2 mb-8">
               {socials.map((s) => (
@@ -88,7 +98,9 @@ export function SiteFooter() {
           {/* Location columns */}
           {footerLocations.map((l) => (
             <div key={l.city}>
-              <div className="text-[10px] tracking-[0.3em] uppercase text-brand-4 font-semibold mb-4">{l.area}</div>
+              <div className="text-[10px] tracking-[0.3em] uppercase text-brand-4 font-semibold mb-4">
+                {l.area}
+              </div>
               <h4 className="font-serif text-lg text-white mb-3">{l.city}</h4>
               <p className="text-xs text-white/40 leading-relaxed font-light mb-3">{l.addr}</p>
               <a
@@ -102,11 +114,16 @@ export function SiteFooter() {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-wrap justify-between gap-4 items-center">
-          <p className="text-[10px] text-white/25">© {new Date().getFullYear()} All Rights Reserved · The Dental Roots</p>
+          <p className="text-[10px] text-white/25">
+            © {new Date().getFullYear()} All Rights Reserved · The Dental Roots
+          </p>
           <ul className="flex gap-6 list-none">
             {["Privacy Policy", "Terms", "Sitemap"].map((l) => (
               <li key={l}>
-                <Link to="/privacy-policy" className="text-[10px] tracking-[0.2em] uppercase text-white/25 hover:text-brand-4 transition-colors">
+                <Link
+                  to="/privacy-policy"
+                  className="text-[10px] tracking-[0.2em] uppercase text-white/25 hover:text-brand-4 transition-colors"
+                >
                   {l}
                 </Link>
               </li>

@@ -73,19 +73,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "The Dental Roots — Excellence in Dentistry" },
-      { name: "description", content: "Award-winning dental care in Delhi & Gurugram. Implants, veneers, smile makeovers, Invisalign and more." },
+      { name: "theme-color", content: "#000000" },
+      { name: "format-detection", content: "telephone=no" },
+      {
+        name: "google-site-verification",
+        content: "sX6OWlwEbpCfMBmXUnN90NnIhTE7_xzA4Upen5L8Pvs",
+      },
+      {
+        name: "description",
+        content:
+          "Award-winning dental care in Delhi & Gurugram. Implants, veneers, smile makeovers, Invisalign and more.",
+      },
       { name: "author", content: "The Dental Roots" },
       { property: "og:title", content: "The Dental Roots — Excellence in Dentistry" },
-      { property: "og:description", content: "Award-winning dental care in Delhi & Gurugram. Implants, veneers, smile makeovers, Invisalign and more." },
+      {
+        property: "og:description",
+        content:
+          "Award-winning dental care in Delhi & Gurugram. Implants, veneers, smile makeovers, Invisalign and more.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "The Dental Roots — Excellence in Dentistry" },
       { name: "twitter:description", content: "Award-winning dental care in Delhi & Gurugram." },
     ],
     links: [
+      { rel: "icon", href: "/assets/icons/favicon.webp" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap",
+      },
       { rel: "stylesheet", href: appCss },
     ],
   }),
